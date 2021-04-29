@@ -20,13 +20,13 @@
 
 #nav1{
     float: left;
+    padding: 5% 5%;
 }
 
 #nav1 a{
     display: block;
     color: white;
     text-align: center;
-    padding: 40px 80px;
     text-decoration: none;
 }
 
