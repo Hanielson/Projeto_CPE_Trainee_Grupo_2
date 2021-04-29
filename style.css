@@ -1,0 +1,79 @@
+#nav{
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navigation{
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 93.42%;
+    height: 100px;
+    overflow: hidden;
+    background-color: #403E3B;
+}
+
+#nav1{
+    float: left;
+}
+
+#nav1 a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 40px 80px;
+    text-decoration: none;
+}
+
+#nav1 a:hover:not(.active){
+    background-color: #131212;
+}
+
+#Logo{
+    float: left;
+}
+
+#Home{
+    text-align: center;
+}
+
+#Sobre{
+    text-align: center;
+}
+
+#up{
+    text-align: center;
+}
+
+#Importancia{
+    text-align: center;
+}
+
+#mid{
+    text-align: center;
+}
+
+#Share{
+    text-align: center;
+}
+
+#low{
+    text-align: center;
+}
+
+#Footer{
+    clear: both; 
+    width: 700px; 
+    margin: 0 auto; 
+    font-size: 0.75em; 
+    text-align: center; 
+    background-color: #ECECEC; 
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5%;
+}
