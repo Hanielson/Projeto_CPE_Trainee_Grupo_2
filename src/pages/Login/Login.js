@@ -1,6 +1,6 @@
 import React , {useState} from 'react';
-import Logo from 'D:/MS_Visual_Studio_Code_Res/React/ProjetoTrainee/branch1/src/logo.png';
-import 'D:/MS_Visual_Studio_Code_Res/React/ProjetoTrainee/branch1/src/style.css';
+import Logo from '../../../src/logo.png';
+import '../../../src/style.css';
 
 function Login () {
     const [usuario, setUsuario] = useState([]);
