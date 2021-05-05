@@ -1,9 +1,7 @@
-import React from 'react';
-import { Route } from 'react-router';
-import Routes from './routes';
+import React from 'react'
+import { Route } from 'react-router'
+import Routes from './routes'
 
-function App() {
+export default function App() {
   return <Routes/>
 }
-
-export default App;
