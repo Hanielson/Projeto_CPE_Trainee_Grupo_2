@@ -1,4 +1,5 @@
-.all{
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+ .all {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -6,75 +7,65 @@
   right: 0;
   left: 0;
 }
-
 .top-box {
   display: flex;
   flex-direction: row;
   background-color: #a2a3a6;
   height: 155px;
-  box-shadow: inset 0 -1px 10px rgb(255, 255, 255), inset 0 1px 10px rgb(0, 0, 0);
+  box-shadow: inset 0 -1px 10px rgb(255, 255, 255),
+    inset 0 1px 10px rgb(0, 0, 0);
 }
+
 .logo img {
-  height:95px;
+  height: 95px;
   width: auto;
   padding-left: 30%;
   padding-top: 25%;
 }
-.navegue{
+.navegue {
   display: flex;
   flex-direction: column;
   width: 25%;
   font-family: "Montserrat", sans-serif;
   padding-left: 10%;
 }
-.textoCimaNavegue {
+.textoCima {
+  font-family: "Cabin", sans-serif;
   color: #58595b;
-  font-size: 1.75em;
-  height: 0;
-  font-weight: 600;
+  font-size: 1.8em;
+  font-weight: bolder;
+  line-height: 0px;
 }
 .links {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
   color: #facdbb;
   font-size: 1.5em;
   font-weight: lighter;
+  line-height: 5px;
 }
-.contatos{
+
+.contatos {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 45%;
   font-family: "Montserrat", sans-serif;
-  padding-right: 10%;
+  padding-right: 5%;
 }
-.textoCimaContatos {
-  color: #58595b;
-  font-size: 1.75em;
-  height: 0;
-  font-weight: 600;
-}
+
 .contatosTexto {
   justify-content: space-between;
+
   color: #facdbb;
   font-size: 1.5em;
   font-weight: lighter;
   line-height: 10px;
 }
-.linha{
+.linha {
   border-color: #58595b;
-  background-color: #58595b;;
+  background-color: #58595b;
   width: 0.25%;
-  border-width: 0; 
-}
-
-.bottom-box{
-  background-color: #ffffff;
-  margin: 0;
-  color:black;
-  font-family: "Montserrat", sans-serif;
-  font-size: 0.90em;
-  padding-right: 1em;
-  box-shadow: inset 0 -1px 10px rgb(255, 255, 255), inset 0 1px 10px rgb(0, 0, 0);
-  padding-top: 0.75%;
+  border-width: 0;
 }
