@@ -1,71 +1,94 @@
- @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
- 
- .all {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.all {
+  /* Vou ter meus elementos dispostos em coluna*/
   display: flex;
   flex-direction: column;
+
+  /* Define a posição do rodapé*/
   position: absolute;
   bottom: 0;
   right: 0;
   left: 0;
 }
 .top-box {
+  /* Vou ter meus elementos dispostos em linha com tamanho da altura 
+  inicial de 155px e se adaptando caso a altura aumente */
   display: flex;
   flex-direction: row;
   flex-grow: 1;
-  flex:1;
-  background-color: #a2a3a6;
+  flex: 1;
   height: 155px;
-  box-shadow: inset 0 -1px 10px rgb(255, 255, 255),inset 0 1px 10px rgb(0, 0, 0);
+
+  /* Sombra, inset direciona a sombra pra dentro*/
+  box-shadow: inset 0 -1px 10px rgb(255, 255, 255),
+    inset 0 1px 10px rgb(0, 0, 0);
+  /* Fonte base para todos elementos dentro do container*/
   font-size: 15px;
+  background-color: #a2a3a6;
 }
 .logo img {
-  height: 100%;
-  max-height: 95px;
-  width: auto;
+  /* Problema não centraliza quando o espaço aumenta*/
+  height: 95px;
   padding-left: 30%;
-  padding-top: 25%;
+  padding-top: 20%;
 }
 .navegue {
+  /* Define que os texto ficarão um abaixo do outro*/
   display: flex;
   flex-direction: column;
-  width: 25%;
-  font-family: "Montserrat", sans-serif;
+
+  /* Forma usada para mudar a posição dos elementos*/
   padding-left: 10%;
+  width: 25%;
 }
 .textoCima {
+  /* Fonte que será usada*/
   font-family: "Cabin", sans-serif;
+  
+  /*Configurações do tamanho e cor da letra*/
   color: #58595b;
   font-size: 1.8em;
   font-weight: bolder;
   line-height: 0px;
 }
 .links {
+  /* Define os textos em linha, com o wrap que quebra a linha, ajudando
+  na responsividade e com o justify-content centralizando o texto*/
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   justify-content: center;
 
-  color: #facdbb;
+  /*Configurações da fonte*/
+  font-family: "Montserrat", sans-serif;
   font-size: 1.4em;
   font-weight: 400;
   line-height: 0px;
+  color: #facdbb;
 }
 
 .contatos {
+  /* Define que os texto ficarão um abaixo do outro*/
   display: flex;
   flex-direction: column;
+
+  /* Forma usada para mudar a posição dos elementos*/
   width: 45%;
-  font-family: "Montserrat", sans-serif;
-  padding-right: 5%; 
+  padding-right: 5%;
 }
 
-.contatosTexto {  
-  color: #facdbb;
+.contatosTexto {
+  /*Configurações da fonte*/
+  font-family: "Montserrat", sans-serif;
   font-size: 1.4em;
   font-weight: 400;
   line-height: 0;
+  color: #facdbb;
 }
-.numeroTelefone{
+.numeroTelefone {
+  /* Define os textos em linha, com o wrap que quebra a linha, ajudando
+  na responsividade e com o justify-content centralizando o texto*/
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -73,9 +96,12 @@
 }
 
 .linha {
+  /* Forma usada para mudar a posição dos elementos*/
   padding-top: 10px;
   padding-left: 60px;
   padding-bottom: 10px;
+  
+  /* Forma usada para ajustar a imagem*/
   width: 3px;
   height: auto;
   min-height: 120px;
