@@ -1,0 +1,51 @@
+#nav{
+    position: fixed;
+    width: 100vw;
+    height: 70px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#Logo{
+    float: left;
+    width: 70px;
+    height: 70px;
+}
+
+.navigation1{
+    float: right;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #403E3B;
+}
+
+.nav1{
+    height: 100%;
+    text-align: center;
+    float: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nav1 a{
+    padding: 30px 30px 30px 30px;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav1 a:hover:not(.active){
+    background-color: #131212;
+}
+
+.active{
+    background-color: #131212;
+}

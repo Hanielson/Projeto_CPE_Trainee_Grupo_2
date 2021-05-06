@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
-import Logo from '../../../src/logo.png'
-import Header from '../../header/index'
-import '../../../src/style.css'
+import Header from '../../Componentes/header/index'
+import Footer from '../../Componentes/footer/index'
 
 /**
  * @todo Tirar os resquicios de HTML puro desse arquivo
@@ -17,11 +16,11 @@ export default function Login() {
     }
 
     return (
-        <div className="Cadastro">
+        <div className={'Cadastro'} >
             <Header />
-            <article className="Page">
+            <article className={'Page'} >
                 <br /><br /><br />
-                <h2 id="Login">LOGIN</h2>
+                <h2 id={'Login'} >LOGIN</h2>
                 <div>
                     <h1>Novo Usuário</h1>
                     <input
@@ -38,14 +37,11 @@ export default function Login() {
                         onChange={handleInfoChange}
                     />
                     <br />
-                    <button>Entrar</button>
+                    <button> Entrar </button>
                 </div>
             </article>
 
-            <footer className="Footer">
-                <p>Bookpedia - Leitura Facilitada!</p>
-                <p><small>Copyright</small></p>
-            </footer>
+            <Footer/>
         </div>
     )
 }

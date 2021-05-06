@@ -1,7 +1,8 @@
 import React from 'react'
-import Logo from '../../../src/logo.png'
-import '../../../src/style.css'
-import Header from '../../header/index'
+import Logo from '../../assets/logo.png'
+import './home.css'
+import Header from '../../Componentes/header/index'
+import Footer from '../../Componentes/footer/index'
 
 export default function Home() {
     return (
@@ -37,10 +38,7 @@ export default function Home() {
                 </p>
             </article>
 
-            <footer className={'Footer'}>
-                <p>Bookpedia - Leitura Facilitada!</p>
-                <p><small>Copyright</small></p>
-            </footer>
+            <Footer/>
         </div>
     )
 }

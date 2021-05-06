@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import Logo from '../../../src/logo.png'
-import Header from '../../header/index'
-import '../../../src/style.css'
+import Logo from '../../assets/logo.png'
+import Header from '../../Componentes/header/index'
+import Footer from '../../Componentes/footer/index'
 
 /**
  * @todo Tirar os resquicios de HTML puro desse arquivo
@@ -63,11 +63,7 @@ import '../../../src/style.css'
                     <button>Entrar</button>
                 </div>
             </article>
-
-            <footer class={'Footer'}>
-                <p>Bookpedia - Leitura Facilitada!</p>
-                <p><small>Copyright</small></p>
-            </footer>
+            <Footer/>
         </div >
     )
 }

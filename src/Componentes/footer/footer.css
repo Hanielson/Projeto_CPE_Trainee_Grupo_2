@@ -1,0 +1,16 @@
+
+.footer{
+    position: fixed;
+    clear: both; 
+    height: 70px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: 0 auto; 
+    font-size: 0.75em; 
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    background-color: #403E3B;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
