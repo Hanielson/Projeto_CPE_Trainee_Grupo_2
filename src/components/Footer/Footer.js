@@ -17,14 +17,14 @@ function Footer() {
           </p>
           <div className="links">
             <p>Home</p>
-            <p>|</p>
+            <p>&nbsp;&nbsp;</p>
             <p>Livros</p>
-            <p>|</p>
+            <p>&nbsp;&nbsp;</p>
             <p>Usuários</p>
           </div>
         </div>
-
-        <hr className="linha" />
+        
+        <img src="https://i.ibb.co/RHz9bry/linha-vertical-removebg-preview.png" className="linha" />
 
         <div className="contatos">
           <p className="textoCima" align="center">
@@ -32,7 +32,11 @@ function Footer() {
           </p>
           <div className="contatosTexto" align="center">
             <p>Contato@email.com</p>
-            <p>+55 (77) 9 9999-9999 | +55 (31) 9 9898-9898</p>
+            <div className="numeroTelefone" >
+              <p>+55 (77) 9 9999-9999</p>
+              <p>&nbsp;&nbsp;</p>
+              <p>+55 (31) 9 9898-9898</p>
+            </div>
           </div>
         </div>
 

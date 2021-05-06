@@ -1,51 +1,5 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
 
-.box{
-  background-color: #a2a3a6;
-  position: absolute;
-  bottom:0;
-  left: 0;
-  right: 0;
-  height: 155px;
-  display: flex;
-  flex-direction: row;
-}
-.boxImage img{
-  height: 90px;
-  padding-left: 30px;
-  padding-top: 30px;
-}
-
-
-.navegue{
-    background-color: green;
-}
-.textoCima{
-  color: #58595B;
   font-family: "Montserrat", sans-serif;
-  font-size: 30px;
-  font-weight: bolder;
-  line-height: 50px;
-}
-
-.linksNavegue{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  
-  color: #facdbb;
-  font-family: "Montserrat", sans-serif;
-  font-size: 27px;
-  line-height: 0px;
-}
-
-.contatos{
-  background-color: red;
-}
-.textoContatos{
-  color: #facdbb;
-  font-family: "Montserrat", sans-serif;
-  font-size: 27px;
-  line-height: 0px;
-}
+ 
