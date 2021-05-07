@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.header{
+  height:105px;
+  width: 100%;
+  background-color:#CCB0A5 ;
+}
+
+.cadastro{
+  /* Dispor os elemntos em linha */
+  display: flex;
+  flex-direction: row;
+
+  /* Ajustar os itens na tela */
+  padding-left: 83px;
+  padding-top:30px;
+  height: 600px;
+  /* Configurações gerais da fonte */
+  font-size: 16px; /* padrão */
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  color: #58595b;
+  
+  /* "Cobrir a tela" */
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color:#ECEEED;
+  
+}
+
+  /* O > para acessar cada div */
+.botoes_inputs>div{
+  /* Dispor elementos em linha */
+  display: flex;
+  flex-direction: row;
+}
+
+/* Posições dos input e textos */
+
+.inputNomeSobrenome>input{
+  width: 200px;
+  border-radius: 15px;
+  outline: 0;
+  height: 22px;
+  border: 1px solid #000000;
+  padding-left: 10px;
+}
+
+.inputSobrenome{
+  margin-left: 100px;
+}
+
+.inputRuaCidade{
+  width: 300px;
+  border-radius: 15px;
+  outline: 0;
+  height: 22px;
+  border: 1px solid #000000;  
+  padding-left: 10px;
+}
+.inputNumeroUF{
+  width: 100px;
+  height: 22px;
+  margin-left: 100px;
+  border-radius: 15px;
+  outline: 0;
+  border: 1px solid #000000;  
+  padding-left: 10px;
+}
+.nomeEspacamento{
+  margin-left: 110px;
+}
+.inputEmailSenhaPergunta{
+  width: 500px;
+  border-radius: 15px;
+  outline: 0;
+  height: 22px;
+  border: 1px solid #000000; 
+  padding-left: 10px; 
+}
+.botaoCadastrar{
+  padding-top: 20px;
+  padding-left: 15px;
+}
+.botaoCadastrar> button{
+  /* Faz o cursor mudar*/
+  cursor:pointer;
+  border-radius:16px;
+  color: #58595b;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight:bolder;
+  padding: 6px 50px;
+  background-color: #CCB0A5;
+  border: none;
+} 
+.perguntaCadastro{
+  padding-left: 110px;
+}
+.perguntaCadastrado{
+  font-size: 14px;
+  padding-top: 10px;
+  line-height: 0px;
+}
+.perguntaLogin{
+  font-size: 14px;
+  color: #CCB0A5;
+}
+
+.linhas{
+  /* Forma usada para ajustar a imagem*/
+  width: 3px;
+  height: auto;
+  min-height: 530px;
+  padding-right: 45px;
+  padding-left: 45px;
+}
+
+.logos{
+  /* Tamanho e posição da logo*/
+  height: 250px;
+  padding-left: 100px;
+  padding-top: 100px;
+}
