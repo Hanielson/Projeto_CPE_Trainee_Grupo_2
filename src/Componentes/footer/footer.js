@@ -1,6 +1,7 @@
-  
-import React from "react";
-import "./footer.css";
+﻿import React from "react";
+import { Link } from "react-router-dom";
+import "./Footer.css";
+
 
 function Footer() {
   return (
@@ -10,20 +11,26 @@ function Footer() {
         {/*Logo que importada de um site, já que a ferramenta
         que uso não tem suporte gratuito para importar*/}
         <div className="logo">
-          <img src="https://i.ibb.co/CJ0TfSK/book-pedia-2.png" />
+          <img src="https://i.ibb.co/CJ0TfSK/book-pedia-2.png"/>
         </div>
 
         {/*Links das outras páginas*/}
         <div className="navegue">
-          <h1 className="textoCima" align="center"> Navegue </h1>
+          <p className="textoCima" align="center">
+            Navegue
+          </p>
           <div className="links">
-            <a href="https://i.ibb.co/CJ0TfSK/book-pedia-2.png">
+            <Link to="./Home">
               <p>Home</p>
-            </a>
-            <p>&nbsp;&nbsp;</p>
-            <p>Livros</p>
-            <p>&nbsp;&nbsp;</p>
-            <p>Usuários</p>
+            </Link>
+            <p className="apagar">&nbsp;&nbsp;</p>
+            <Link to="./Livros">
+              <p>Livros</p>
+            </Link>
+            <p className="apagar">&nbsp;&nbsp;</p>
+            <Link to="./Usuarios">
+              <p>Usuários</p>
+            </Link>
           </div>
         </div>
 
@@ -34,13 +41,17 @@ function Footer() {
 
         {/*Contatos do site*/}
         <div className="contatos">
-            <h1 className = "textoCima" align="center"> Contatos </h1>
+          <p className="textoCima" align="center">
+            Contatos
+          </p>
+          <div className="contatosTexto" align="center">
             <p>Contato@email.com</p>
             <div className="numeroTelefone">
-              <p>+55 (77) 9 9999-9999</p>  
+              <p>+55 (77) 9 9999-9999</p>
               <p>&nbsp;&nbsp;</p>
               <p>+55 (31) 9 9898-9898</p>
             </div>
+          </div>
         </div>
 
       </div>
