@@ -1,0 +1,11 @@
+p {
+    padding-left: 10px;
+    font-family: Montserrat;
+    color: #58595B;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+}
