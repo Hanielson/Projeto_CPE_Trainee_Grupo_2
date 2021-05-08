@@ -1,6 +1,6 @@
 import React from 'react';
 import './Cadastro.css';
-import Footer from "../../components/Footer";
+import Footer from "../../Componentes/footer";
 
 
 function Cadastro() {

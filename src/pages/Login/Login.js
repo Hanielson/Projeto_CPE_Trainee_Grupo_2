@@ -31,8 +31,8 @@ export default function Login() {
                             name={'email'}
                             onChange={handleInfoChange}
                         />
-                        {/* <TextoFormulario textoInput={'Senha'} /> */}
-                        <input
+                        <InputFormulario
+                            textoInput={'Senha'}
                             className={'inputSenha'}
                             type={'password'}
                             name={'senha'}

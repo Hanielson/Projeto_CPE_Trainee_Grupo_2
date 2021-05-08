@@ -1,5 +1,5 @@
 .login {
-    background-color: red;  /** */
+    background-color: #ECEEED;
     
     display: grid;
     justify-content: center;
@@ -27,7 +27,7 @@
     grid-area: areaDosInputs;
     justify-content: center;
     align-content: center;
-    row-gap: 80px;
+    row-gap: 30px;
     grid-template-areas:
         'inputEmail'
         'inputSenha';
@@ -43,6 +43,7 @@ input {
 
 button {
     background-color: #CCB0A5;
+    cursor:pointer;
     border: none;
     border-radius: 80px;
     width: 104px;

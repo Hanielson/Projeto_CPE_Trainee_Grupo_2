@@ -1,10 +1,9 @@
 p {
-    padding-left: 10px;
-    font-family: Montserrat;
+    padding-left: 15px;
+    font-family: Montserrat, sans-serif;
     color: #58595B;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 23px;
+    font-weight: bolder;
+    font-size: 20px;
     line-height: 28px;
     display: flex;
     align-items: center;
