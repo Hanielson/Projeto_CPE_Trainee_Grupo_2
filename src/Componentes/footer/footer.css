@@ -1,4 +1,4 @@
-﻿@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 .all {
   /* Vou ter meus elementos dispostos em coluna*/
@@ -6,7 +6,7 @@
   flex-direction: column;
 
   /* Define a posição do rodapé*/
-  position: absolute;
+  position: fixed;
   bottom: 0;
   right: 0;
   left: 0;
@@ -44,8 +44,8 @@
 }
 .textoCima {
   /* Fonte que será usada*/
-  font-family: "Cabin", sans-serif;
-  
+  font-family: 'Cabin', sans-serif;
+
   /*Configurações do tamanho e cor da letra*/
   color: #58595b;
   font-size: 1.8em;
@@ -61,20 +61,20 @@
   justify-content: center;
 
   /*Configurações da fonte*/
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.4em;
   font-weight: 400;
   line-height: 0px;
   color: #facdbb;
 }
-.links>a{
+.links > a {
   text-decoration: none;
 }
-.links> a> p{
-  color:#facdbb;
+.links > a > p {
+  color: #facdbb;
 }
-.links> a> p:hover{
-  color:#facdbbb6;
+.links > a > p:hover {
+  color: #facdbbb6;
 }
 
 .contatos {
@@ -89,7 +89,7 @@
 
 .contatosTexto {
   /*Configurações da fonte*/
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.4em;
   font-weight: 400;
   line-height: 0;
@@ -109,7 +109,7 @@
   padding-top: 10px;
   padding-left: 60px;
   padding-bottom: 10px;
-  
+
   /* Forma usada para ajustar a imagem*/
   width: 3px;
   height: auto;
@@ -118,7 +118,7 @@
 
 /* Responsividade */
 
-@media (max-width: 1100px){
+@media (max-width: 1100px) {
   .logo img {
     padding-top: 45%;
   }
@@ -126,11 +126,11 @@
     flex-direction: column;
     align-items: center;
   }
-  .apagar{
+  .apagar {
     display: none;
   }
 }
-@media (max-width: 690px){
+@media (max-width: 690px) {
   .top-box {
     font-size: 10px;
   }
@@ -143,7 +143,7 @@
     padding-left: 25px;
   }
 }
-@media (max-width: 500px){
+@media (max-width: 500px) {
   .top-box {
     font-size: 8px;
   }
@@ -157,7 +157,7 @@
     min-height: 90px;
   }
 }
-@media (max-width: 360px){
+@media (max-width: 360px) {
   .top-box {
     font-size: 6px;
   }
