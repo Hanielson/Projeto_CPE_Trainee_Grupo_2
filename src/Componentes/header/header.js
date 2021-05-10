@@ -10,9 +10,9 @@ export default function Header() {
                 <li className={'nav1'}><a href={'/'}>Home</a></li>
                 <li className={'nav1'}><a href={'/cadastro'}>Cadastro</a></li>
                 <li className={'nav1'}><a href={'/login'}>Login</a></li>
-                <li className={'nav1'}><a href={''}>Livros</a></li>
-                <li className={'nav1'}><a href={''}>Perfil</a></li>
-                <li className={'nav1'}><a href={''}>Usuários</a></li>
+                <li className={'nav1'}><a href={'/livros'}>Livros</a></li>
+                <li className={'nav1'}><a href={'/perfil'}>Perfil</a></li>
+                <li className={'nav1'}><a href={'/usuarios'}>Usuarios</a></li>
             </ul>
         </div>
     )

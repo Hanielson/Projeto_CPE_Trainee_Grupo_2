@@ -44,6 +44,14 @@
 a {
     color: #CCB0A5;
     cursor: pointer;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+}
+
+.cadastreSe:active {
+    position: relative;
+    top: 2px;
+    text-shadow: none;
 }
 
 input {
@@ -61,13 +69,14 @@ button {
     width: 104px;
     height: 35px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-    display: flex;
+    display: grid;
+    grid-area: botaoSubmit;
+    justify-content: center;
     align-items: center;
-    justify-items: center;
     font-family: "Montserrat", sans-serif;
     color: #58595B;
     font-size: 18px;
-    font-weight: 900;    
+    font-weight:900;    
 }
 
 .inputEmail {
@@ -80,9 +89,10 @@ button {
     grid-area: inputSenha;
 }
 
-.botaoSubmit {
-    display: grid;
-    grid-area: botaoSubmit;
+.botaoSubmit:active {
+    position: relative;
+    top: 5px;
+    box-shadow: none;
 }
 
 .semLogin {

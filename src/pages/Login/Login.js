@@ -40,10 +40,10 @@ export default function Login() {
                         />
                     </div>
                     <div className={'areaBotao'}>
-                        <button className={'botaoSubmit'}> Entrar </button>
+                        <button className={'botaoSubmit'} > Entrar </button>
                         <div className={'semLogin'} > 
                             Não tem conta? 
-                            <a>Cadastre-se!</a>
+                            <a className={'cadastreSe'} href={'/cadastro'} > Cadastre-se! </a>
                         </div>
                     </div>
                 </div>
@@ -53,7 +53,7 @@ export default function Login() {
                     </div>
                 </div>
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </div>
     )
 }

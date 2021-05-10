@@ -86,7 +86,7 @@ function Cadastro() {
         </div>
       </div>
 
-      <div className="Foot"> <Footer /> </div>
+      {/* <div className="Foot"> <Footer /> </div> */}
       
     </div>
   );
