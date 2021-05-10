@@ -24,7 +24,7 @@ export default function Login() {
             <div className={'login'} >
                 <div className={'areaDaEsquerda'} >
                     <div className={'areaDosInputs'}>
-                        <InputFormulario 
+                        <InputFormulario
                             textoInput={'E-mail'}
                             className={'inputEmail'}
                             type={'text'}
@@ -39,13 +39,21 @@ export default function Login() {
                             onChange={handleInfoChange}
                         />
                     </div>
-                    <button className={'botaoSubmit'}> Entrar </button>
+                    <div className={'areaBotao'}>
+                        <button className={'botaoSubmit'}> Entrar </button>
+                        <div className={'semLogin'} > 
+                            Não tem conta? 
+                            <a>Cadastre-se!</a>
+                        </div>
+                    </div>
                 </div>
                 <div className={'areaDaDireita'}>
-                    Logo
+                    <div>
+                        <img src="https://i.ibb.co/CJ0TfSK/book-pedia-2.png" className={'logo'} />
+                    </div>
                 </div>
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </div>
     )
 }

@@ -3,7 +3,7 @@
     
     display: grid;
     justify-content: center;
-    height: 500px;
+    height: 700px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
         'areaDaEsquerda areaDaDireita';
@@ -11,16 +11,16 @@
 
 .areaDaEsquerda {
     background-color: #ECEEED;
-    
     display: grid;
     grid-area: areaDaEsquerda;
+    height: 400px;
     justify-content: center;
-    align-content: center;
-    row-gap: 30px;
+    align-items: center;
+    padding-top: 90px;
     grid-template-areas:
         'areaDosInputs'
-        'botaoSubmit';
-    grid-auto-rows: min-content;
+        'areaBotao';
+    
 }
 .areaDosInputs {
     display: grid;
@@ -32,6 +32,18 @@
         'inputEmail'
         'inputSenha';
 
+}
+
+.areaBotao {
+    display: grid;
+    align-items: center;
+    grid-area: areaBotao;
+    grid-template-areas: 'botaoSubmit semLogin';
+}
+
+a {
+    color: #CCB0A5;
+    cursor: pointer;
 }
 
 input {
@@ -54,7 +66,7 @@ button {
     justify-items: center;
     font-family: "Montserrat", sans-serif;
     color: #58595B;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 900;    
 }
 
@@ -71,4 +83,32 @@ button {
 .botaoSubmit {
     display: grid;
     grid-area: botaoSubmit;
+}
+
+.semLogin {
+    display: grid;
+    grid-area: semLogin;
+    font-family: "Montserrat", sans-serif;  
+    justify-content: center;
+    color: #58595B;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.logo {
+    display: grid;
+    align-content: center;
+    height: 200px;
+} 
+
+.areaDaDireita {
+    background-color: #ECEEED;
+    border-left: solid #58595B 3px;
+    height: 400px;
+    margin-top: 100px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-area: areaDaDireita;
+    grid-template-areas:'logo';
 }
