@@ -1,125 +1,371 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-.header{
-  height:105px;
+.header {
+  height: 105px;
   width: 100%;
-  background-color:#CCB0A5 ;
+  background-color: #ccb0a5;
 }
-
-.cadastro{
+.cadastro {
   /* Dispor os elemntos em linha */
   display: flex;
   flex-direction: row;
-
+  justify-content: center;
+  align-items: center;
   /* Ajustar os itens na tela */
-  padding-left: 83px;
-  padding-top:30px;
-  height: 600px;
+  height: 90%;
+  margin: 0 auto;
+
   /* Configurações gerais da fonte */
-  font-size: 16px; /* padrão */
-  font-family: "Montserrat", sans-serif;
+  font-size: 20px; /* padrão */
+  font-family: 'Montserrat', sans-serif;
   font-weight: bolder;
+  line-height: 0px;
   color: #58595b;
-  
+
   /* "Cobrir a tela" */
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
-  background-color:#ECEEED;
-  
+  background-color: #eceeed;
 }
-
-  /* O > para acessar cada div */
-.botoes_inputs>div{
+/* O > para acessar cada div */
+.botoes_inputs > div {
   /* Dispor elementos em linha */
   display: flex;
   flex-direction: row;
 }
-
 /* Posições dos input e textos */
-
-.inputNomeSobrenome>input{
+.inputNomeSobrenome > input {
   width: 200px;
-  border-radius: 15px;
+  border-radius: 80px;
   outline: 0;
-  height: 22px;
+  height: 30px;
   border: 1px solid #000000;
   padding-left: 10px;
+  /* Altera o estilo da fonte escrita dentro do input */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #58595b;
 }
-
-.inputSobrenome{
-  margin-left: 100px;
+.inputSobrenome {
+  margin-left: 55px;
 }
-
-.inputRuaCidade{
+.espacamentoSobrenome {
+  margin-left: 80px;
+}
+.inputRuaCidade {
   width: 300px;
-  border-radius: 15px;
+  border-radius: 80px;
   outline: 0;
-  height: 22px;
-  border: 1px solid #000000;  
+  height: 30px;
+  border: 1px solid #000000;
   padding-left: 10px;
+  /* Altera o estilo da fonte escrita dentro do input */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #58595b;
 }
-.inputNumeroUF{
-  width: 100px;
-  height: 22px;
-  margin-left: 100px;
-  border-radius: 15px;
+.inputNumeroUF {
+  width: 80px;
+  height: 30px;
+  margin-left: 75px;
+  border-radius: 80px;
   outline: 0;
-  border: 1px solid #000000;  
+  border: 1px solid #000000;
   padding-left: 10px;
+
+  /* Altera o estilo da fonte escrita dentro do input */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #58595b;
 }
-.nomeEspacamento{
-  margin-left: 110px;
+.espacamentoNumeroUF {
+  margin-left: 80px;
 }
-.inputEmailSenhaPergunta{
-  width: 500px;
-  border-radius: 15px;
+.inputEmailSenhaPergunta {
+  width: 470px;
+  border-radius: 80px;
   outline: 0;
-  height: 22px;
-  border: 1px solid #000000; 
-  padding-left: 10px; 
+  height: 30px;
+  border: 1px solid #000000;
+  padding-left: 10px;
+  /* Altera o estilo da fonte escrita dentro do input */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #58595b;
 }
-.botaoCadastrar{
+.botaoCadastrar {
   padding-top: 20px;
-  padding-left: 15px;
+  padding-left: 25px;
 }
-.botaoCadastrar> button{
+.botaoCadastrar > button {
   /* Faz o cursor mudar*/
-  cursor:pointer;
-  border-radius:16px;
+  cursor: pointer;
+  border-radius: 16px;
   color: #58595b;
   font-size: 16px;
-  font-family: "Montserrat", sans-serif;
-  font-weight:bolder;
-  padding: 6px 50px;
-  background-color: #CCB0A5;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  padding: 8px 50px;
+  background-color: #ccb0a5;
   border: none;
-} 
-.perguntaCadastro{
+}
+.perguntaCadastrado {
+  font-size: 14px;
+  padding-top: 15px;
+  line-height: 5px;
   padding-left: 110px;
 }
-.perguntaCadastrado{
+.perguntaLogin {
   font-size: 14px;
-  padding-top: 10px;
-  line-height: 0px;
+  color: #ccb0a5;
 }
-.perguntaLogin{
-  font-size: 14px;
-  color: #CCB0A5;
-}
-
-.linhas{
+.linhas {
   /* Forma usada para ajustar a imagem*/
   width: 3px;
   height: auto;
-  min-height: 530px;
+  min-height: 520px;
   padding-right: 45px;
   padding-left: 45px;
 }
-
-.logos{
+.logos {
   /* Tamanho e posição da logo*/
   height: 250px;
   padding-left: 100px;
   padding-top: 100px;
 }
+
+@media (max-width: 1050px) {
+  .cadastro {
+    font-size: 14px;
+  }
+  .logos {
+    height: 200px;
+    padding-left: 50px;
+  }
+  .inputNomeSobrenome > input {
+    height: 25px;
+    width: 150px;
+  }
+  .inputSobrenome {
+    margin-left: 60px;
+  }
+  .espacamentoSobrenome {
+    margin-left: 70px;
+  }
+  .inputRuaCidade {
+    height: 25px;
+    width: 250px;
+  }
+  .inputNumeroUF {
+    height: 25px;
+    width: 70px;
+    margin-left: 40px;
+  }
+  .espacamentoNumeroUF {
+    margin-left: 50px;
+  }
+  .inputEmailSenhaPergunta {
+    height: 25px;
+    width: 375px;
+  }
+  .botaoCadastrar {
+    padding-left: 15px;
+  }
+  .botaoCadastrar > button {
+    padding: 4px 30px;
+    font-size: 14px;
+  }
+  .perguntaCadastrado {
+    font-size: 12px;
+    padding-left: 100px;
+  }
+  .perguntaLogin {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 840px) {
+  .cadastro {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .linhas {
+    display: none;
+  }
+  .logos {
+    height: 200px;
+    padding-left: 0px;
+    padding-top: 0px;
+  }
+}
+@media (max-width: 530px) {
+  .cadastro {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .inputNomeSobrenome > input {
+    height: 20px;
+    width: 120px;
+  }
+  .inputSobrenome {
+    margin-left: 45px;
+  }
+  .espacamentoSobrenome {
+    margin-left: 55px;
+  }
+  .inputRuaCidade {
+    height: 20px;
+    width: 200px;
+  }
+  .inputNumeroUF {
+    height: 20px;
+    width: 55px;
+    margin-left: 30px;
+  }
+  .espacamentoNumeroUF {
+    margin-left: 35px;
+  }
+  .inputEmailSenhaPergunta {
+    height: 20px;
+    width: 300px;
+  }
+  .linhas {
+    display: none;
+  }
+  .logos {
+    /* Tamanho e posição da logo*/
+    height: 175px;
+    padding-left: 0px;
+  }
+  .botaoCadastrar {
+    padding-left: 15px;
+  }
+  .botaoCadastrar > button {
+    padding: 4px 30px;
+    font-size: 14px;
+  }
+  .perguntaCadastrado {
+    font-size: 12px;
+    padding-left: 30px;
+  }
+  .perguntaLogin {
+    font-size: 12px;
+  }
+}
+@media (max-width: 450px) {
+  .cadastro {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .inputNomeSobrenome > input {
+    height: 15px;
+    width: 90px;
+  }
+  .inputSobrenome {
+    margin-left: 30px;
+  }
+  .espacamentoSobrenome {
+    margin-left: 35px;
+  }
+  .inputRuaCidade {
+    height: 15px;
+    width: 150px;
+  }
+  .inputNumeroUF {
+    height: 15px;
+    width: 42px;
+    margin-left: 20px;
+  }
+  .espacamentoNumeroUF {
+    margin-left: 20px;
+  }
+  .inputEmailSenhaPergunta {
+    height: 15px;
+    width: 225px;
+  }
+  .linhas {
+    display: none;
+  }
+  .logos {
+    /* Tamanho e posição da logo*/
+    height: 125px;
+    padding-left: 0px;
+    padding-top: 80px;
+  }
+  .botaoCadastrar {
+    padding-left: 15px;
+  }
+  .botaoCadastrar > button {
+    padding: 2px 15px;
+    font-size: 12px;
+  }
+  .perguntaCadastrado {
+    font-size: 10px;
+    padding-left: 14px;
+  }
+  .perguntaLogin {
+    font-size: 10px;
+  }
+}
+@media (max-width: 380px) {
+  .cadastro {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 88%;
+  }
+  .inputNomeSobrenome > input {
+    height: 15px;
+    width: 90px;
+  }
+  .inputSobrenome {
+    margin-left: 30px;
+  }
+  .espacamentoSobrenome {
+    margin-left: 35px;
+  }
+  .inputRuaCidade {
+    height: 15px;
+    width: 150px;
+  }
+  .inputNumeroUF {
+    height: 15px;
+    width: 42px;
+    margin-left: 20px;
+  }
+  .espacamentoNumeroUF {
+    margin-left: 20px;
+  }
+  .inputEmailSenhaPergunta {
+    height: 15px;
+    width: 225px;
+  }
+  .linhas {
+    display: none;
+  }
+  .logos {
+    /* Tamanho e posição da logo*/
+    height: 125px;
+    padding-left: 0px;
+    padding-top: 80px;
+  }
+  .botaoCadastrar {
+    padding-left: 15px;
+  }
+  .botaoCadastrar > button {
+    padding: 2px 15px;
+    font-size: 12px;
+  }
+  .perguntaCadastrado {
+    font-size: 10px;
+    padding-left: 14px;
+  }
+  .perguntaLogin {
+    font-size: 10px;
+  }
+}
+
