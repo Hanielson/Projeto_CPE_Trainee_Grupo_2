@@ -41,7 +41,7 @@
     grid-template-areas: 'botaoSubmit semLogin';
 }
 
-a {
+.cadastreSe {
     color: #CCB0A5;
     cursor: pointer;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -61,10 +61,16 @@ input {
     height: 29px;
 }
 
-button {
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+} 
+
+.botaoSubmit {
     background-color: #CCB0A5;
     cursor:pointer;
     border: none;
+    text-decoration: none;
     border-radius: 80px;
     width: 104px;
     height: 35px;

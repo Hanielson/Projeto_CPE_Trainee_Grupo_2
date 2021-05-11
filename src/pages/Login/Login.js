@@ -40,7 +40,7 @@ export default function Login() {
                         />
                     </div>
                     <div className={'areaBotao'}>
-                        <button className={'botaoSubmit'} > Entrar </button>
+                        <a className={'botaoSubmit'} href={'/'} > Entrar </a>
                         <div className={'semLogin'} > 
                             Não tem conta? 
                             <a className={'cadastreSe'} href={'/cadastro'} > Cadastre-se! </a>
