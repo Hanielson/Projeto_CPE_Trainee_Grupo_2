@@ -1,58 +1,72 @@
-﻿import React from 'react';
+﻿import React, { useState } from 'react';
 import './Cadastro.css';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 
 function Cadastro() {
+  
+  const  [usuario, setUsuario] = useState();
+  
+  function handleInputChange(e){
+    
+    const key = e.target.name;
+    
+    const newUsuario = {...usuario};
+
+    newUsuario[key] = e.target.value;
+
+    setUsuario (newUsuario);
+    console.log(newUsuario);
+  }
+  
   return (
-    <div>
+    <div className="paginaCadastro">
+
+      <Header />
+
       <div className="cadastro">
-        <div>
-          {' '}
-          <Header />
-        </div>
 
         {/* Botões e inputs*/}
         <div className="botoes_inputs">
           <div>
             <div className="inputNomeSobrenome">
-              <p>Nome</p>
-              <input />
+              <p>Apelido</p>
+              <input name="apelido" onChange={handleInputChange}/>
             </div>
             <div className="inputNomeSobrenome">
-              <p className="espacamentoSobrenome">Sobrenome</p>
-              <input className="inputSobrenome" />
+              <p className="espacamentoSobrenome">Frase que te define</p>
+              <input className="inputSobrenome" name="frase" onChange={handleInputChange} />
             </div>
           </div>
 
           <div>
             <div>
               <p>Rua</p>
-              <input className="inputRuaCidade" />
+              <input className="inputRuaCidade" name="rua" onChange={handleInputChange} />
             </div>
             <div>
               <p className="espacamentoNumeroUF">Número</p>
-              <input className="inputNumeroUF" />
+              <input className="inputNumeroUF" name="numero" onChange={handleInputChange} />
             </div>
           </div>
 
           <div>
             <div>
               <p>Cidade</p>
-              <input className="inputRuaCidade" />
+              <input className="inputRuaCidade" name="cidade" onChange={handleInputChange}/>
             </div>
             <div>
               <p className="espacamentoNumeroUF">UF</p>
-              <input className="inputNumeroUF" />
+              <input className="inputNumeroUF" name="uf" onChange={handleInputChange} />
             </div>
           </div>
 
+          <p>País</p>
+          <input className="inputEmailSenhaPergunta" name="pais" onChange={handleInputChange} />
           <p>E-mail</p>
-          <input className="inputEmailSenhaPergunta" />
+          <input type="email" className="inputEmailSenhaPergunta" name="email" onChange={handleInputChange}/>
           <p>Senha</p>
-          <input type="password" className="inputEmailSenhaPergunta" />
-          <p>Qual seu livro de infância preferido?</p>
-          <input className="inputEmailSenhaPergunta" />
+          <input type="password" className="inputEmailSenhaPergunta" name="senha" onChange={handleInputChange} />
 
           <div>
             <div className="botaoCadastrar">
@@ -84,11 +98,13 @@ function Cadastro() {
             className="logos"
           />
         </div>
-      </div>
+        </div>
+        
+        <div>
+          <Footer />
+        </div>
 
-      <div className="Foot"> <Footer /> </div>
-      
-    </div>
+      </div>
   );
 }
 
