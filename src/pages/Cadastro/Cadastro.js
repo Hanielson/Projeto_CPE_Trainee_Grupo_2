@@ -1,7 +1,7 @@
 ﻿import React, { useState } from 'react';
 import './Cadastro.css';
-import Footer from '../../components/Footer';
-import Header from '../../components/Header';
+import Footer from '../../Componentes/footer';
+import Header from '../../Componentes/header';
 
 function Cadastro() {
   
@@ -104,7 +104,13 @@ function Cadastro() {
           <Footer />
         </div>
 
+<<<<<<< HEAD
       </div>
+=======
+      {/* <div className="Foot"> <Footer /> </div> */}
+      
+    </div>
+>>>>>>> organizado1
   );
 }
 
