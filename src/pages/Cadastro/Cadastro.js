@@ -104,13 +104,7 @@ function Cadastro() {
           <Footer />
         </div>
 
-<<<<<<< HEAD
       </div>
-=======
-      {/* <div className="Foot"> <Footer /> </div> */}
-      
-    </div>
->>>>>>> organizado1
   );
 }
 
