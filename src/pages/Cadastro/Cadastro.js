@@ -1,12 +1,14 @@
 ﻿import React, { useState } from 'react';
 import './Cadastro.css';
-import Footer from '../../Componentes/footer';
-import Header from '../../Componentes/header';
+import Footer from '../../components/Footer';
+import Header from '../../components/Header';
 
 function Cadastro() {
   
   const  [usuario, setUsuario] = useState();
-  
+  {/* Caracteres que são aceitos no input type="number" */}
+  const [symbolsArr] = useState(["e", "E", "+", "-", ".", ","]);
+
   function handleInputChange(e){
     
     const key = e.target.name;
@@ -46,7 +48,7 @@ function Cadastro() {
             </div>
             <div>
               <p className="espacamentoNumeroUF">Número</p>
-              <input className="inputNumeroUF" name="numero" onChange={handleInputChange} />
+              <input className="inputNumeroUF" name="numero" onChange={handleInputChange} type="number" onKeyDown={e => symbolsArr.includes(e.key) && e.preventDefault()} />
             </div>
           </div>
 

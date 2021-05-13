@@ -81,6 +81,15 @@
   font-weight: 500;
   color: #58595b;
 }
+
+/* Remover setas no input do numero */
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;  
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+}
+
 .espacamentoNumeroUF {
   margin-left: 80px;
 }
@@ -126,9 +135,9 @@
   /* Forma usada para ajustar a imagem*/
   width: 3px;
   height: auto;
-  min-height: 520px;
-  padding-right: 45px;
-  padding-left: 45px;
+  min-height: 500px;
+  padding-right: 170px;
+  padding-left: 50px;
 }
 .logos {
   /* Tamanho e posição da logo*/
