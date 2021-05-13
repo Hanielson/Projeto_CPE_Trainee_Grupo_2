@@ -3,8 +3,14 @@ p {
     font-family: Montserrat, sans-serif;
     color: #58595B;
     font-weight: bolder;
-    font-size: 1.9rem;
-    line-height: 2.8rem;
+    font-size: 1.5vw;
+    line-height: 2.0vw;
     display: flex;
     align-items: center;
+}
+
+@media(max-width: 425px) {
+    p {
+        font-size: 3vw;
+    }
 }

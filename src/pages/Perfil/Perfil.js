@@ -7,7 +7,7 @@ export default function Perfil() {
     return (
         <div className={'Perfil'}>
             <Header />
-            
+            Perfil
             <Footer/>
         </div>
     )

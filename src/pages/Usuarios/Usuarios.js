@@ -7,7 +7,7 @@ export default function Usuarios() {
     return (
         <div className={'Usuarios'}>
             <Header />
-            
+            Usuários
             <Footer/>
         </div>
     )
