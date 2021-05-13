@@ -3,8 +3,8 @@ p {
     font-family: Montserrat, sans-serif;
     color: #58595B;
     font-weight: bolder;
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 1.9rem;
+    line-height: 2.8rem;
     display: flex;
     align-items: center;
 }

@@ -20,7 +20,7 @@ function Footer() {
             Navegue
           </p>
           <div className="links">
-            <Link to="./Home">
+            <Link to="./home">
               <p>Home</p>
             </Link>
             <p className="apagar">&nbsp;&nbsp;</p>
