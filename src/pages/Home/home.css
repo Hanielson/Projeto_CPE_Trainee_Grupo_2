@@ -1,0 +1,237 @@
+*{
+    font-family: Montserrat, sans-serif;
+}
+body{
+    margin: 0;
+}
+article{
+    margin-top: 120px;
+}
+#Home{
+    text-align: center;
+}
+
+#Sobre{
+    text-align: center;
+    margin-top: 70px;
+    text-transform: uppercase;
+    color: #ccb0a5;
+}
+
+#up{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#Importancia{
+    grid-column: 6/8;
+    max-width: 300px;
+    text-align: right;
+    margin-left: auto;
+    margin-left:275px;
+    margin-bottom: 0px;
+    margin-top: 40px;
+    
+}
+#Share{
+    grid-column: 1/3;
+    max-width: 400px;
+    text-align: left;
+    margin-left: 200px;
+    margin-top: 40px;
+}
+#mid{
+    max-width: 575px;
+    text-align: right;
+    grid-column: 6/8;
+}
+.importancia{
+    background-color: #ccb0a5;
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+.importancia,.compartilhar{
+    display: grid;
+}
+
+#low{
+    grid-column: 1/3;
+    max-width: 575px;
+    text-align: left;
+    margin-left: 20%;
+
+}
+#imagem2{
+    padding-left: 20%;
+    grid-column: 1 / 4;
+    grid-row: 1 / 3;
+    margin-top: 100px
+}
+#imagem3{
+    grid-column: 4 / 8;
+    grid-row: 1 / 3;
+    padding-left: 10%;
+    margin-top: 100px
+}
+
+
+.fundo_rosa{
+    width: 100%;
+    height: 580px;
+    background-color: #a2a3a6;
+}
+
+#imagem1{
+    padding-left: 5%;
+    float: left;
+}
+#frase_principal{
+    float: right;
+    text-align: right;
+    font-size: 48px;
+    font-weight: 400;
+    max-width: 650px;
+    line-height: 1.2em;
+    padding-top: 120px;
+    padding-right: 5%;
+    display: block;
+}
+
+#autor{
+    display: block;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 36px;
+    margin: 20px;
+    color: #ccb0a5;
+}
+
+.titulo{
+    font-size: 48px;
+    color: #58595B;
+}
+
+.texto{
+    font-size: 30px;
+    font-weight: 100;
+    line-height: 1.2em;
+}
+
+#up{
+    max-width: 945px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.rec.rec-arrow {
+    background-color: #a2a3a67c;
+    color: #fff;
+}
+
+.rec.rec-arrow:hover{
+    background-color: #ccb0a580;
+}
+.rec.rec-arrow:hover, .rec.rec-arrow:active, .rec.rec-arrow:focus, .rec.rec-arrow:after{
+    background-color: #ccb0a5 !important;
+}
+
+.rec.rec-dot{
+    background-color: #a2a3a63a;
+    box-shadow: 0  1px 3px #a2a3a68a;
+}
+.rec.rec-dot_active, .rec.rec-dot:hover, .rec.rec-dot_active:focus{
+    background-color: #ccb0a5;
+    box-shadow: 0 0 1px 3px #ccb0a5 !important;
+}
+.rec.rec-carousel-wrapper{
+    max-width: 80%;
+    margin: auto auto;
+    margin-bottom: 100px;
+    margin-top: 70px;
+}
+
+#lancamento{
+    text-align: center;
+    margin-top: 100px;
+}
+
+@media (max-width:1270px){
+    #frase_principal{
+        text-align: center;
+        max-width: 650px;
+        margin-left: auto;
+        margin-right: 20%;
+        display: block;
+        padding: 0px;
+    }
+    .fundo_rosa{
+        height: 900px;
+    }
+    #imagem1{
+        margin-left: 25%;
+        float: none;
+    }
+    #imagem2{
+        padding-left: 5%;
+    }
+    #imagem3{
+        padding: 0px;
+    }
+    #low{
+        margin-left: 5%;
+    }
+    #Share{
+        margin-left:7%;
+    }
+    .importancia{
+        padding-right: 25px;
+    }
+    #up{
+        margin-left:10%;
+        margin-right: 0px;
+    }
+}
+
+@media (max-width:1120px){
+    #up{
+        margin-left: 10%;
+        max-width: 80%;
+    }
+    .importancia, .compartilhar{
+        display:inherit ;
+    }
+    #imagem2{
+        margin:auto;
+        padding-left: 20%;
+    }
+    #Importancia{
+        text-align: center;
+        margin:0px;
+        max-width: inherit;
+    }
+    #mid{
+        max-width: 80%;
+        text-align: center;
+        padding-left: 10%;
+    }
+    #frase_principal{
+        margin-right: 15%;
+    }
+    #Share{
+        max-width: inherit;
+        text-align: center
+    }
+    #low{
+        max-width: 80%;
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+        padding-left: 10%;
+    }
+    #imagem3{
+        margin:auto;
+        margin-top: 20px;
+        padding-left: 20%;
+    }
+}
