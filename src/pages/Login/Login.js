@@ -49,7 +49,7 @@ export default function Login() {
                 </div>
                 <div className={'areaDaDireita'}>
                     <div>
-                        <img src="https://i.ibb.co/CJ0TfSK/book-pedia-2.png" className={'logo'} />
+                        <img src="https://i.ibb.co/K5sBWhC/oie-nm4q-Dx-Tc-Xe-FN.png" className={'logo'} />
                     </div>
                 </div>
             </div>

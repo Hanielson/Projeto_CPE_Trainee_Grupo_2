@@ -1,7 +1,7 @@
 ﻿import React, { useState } from 'react';
 import './Cadastro.css';
-import Footer from '../../components/Footer';
-import Header from '../../components/Header';
+import Footer from '../../Componentes/footer/index';
+import Header from '../../Componentes/header/index';
 
 function Cadastro() {
   

@@ -1,119 +1,165 @@
 ﻿
-.all {
+.footer {
   /* Vou ter meus elementos dispostos em coluna*/
-  display: flex;
-  flex-direction: column;
-
-  /* Define a posição do rodapé*/
-  position: static;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
+  display: grid;
+  grid-area: 'footer';
+  grid-template-areas: 'top-box';
+  align-items: flex-end;
 }
-.top-box {
-  /* Vou ter meus elementos dispostos em linha com tamanho da altura 
-  inicial de 155px e se adaptando caso a altura aumente */
-  display: flex;
-  flex-direction: row;
-  flex-grow: 1;
-  flex: 1;
 
-  /* Sombra, inset direciona a sombra pra dentro*/
-  box-shadow: inset 0 -1px 10px rgb(255, 255, 255),
+.top-box {
+  display: grid;
+  grid-area: 'top-box';
+  height: 30vh;
+  width: 100vw;
+  align-items: center;
+  grid-template-areas: 'logo navegue contatos';
+  grid-template-columns: 1fr 3fr 3fr;
+  box-shadow:
+    inset 0 -1px 10px rgb(255, 255, 255),
     inset 0 1px 10px rgb(0, 0, 0);
-  /* Fonte base para todos elementos dentro do container*/
   font-size: 16px;
   background-color: #a2a3a6;
 }
-.logo img {
-  /* Problema não centraliza quando o espaço aumenta*/
-  height: 95px;
-  padding-left: 30%;
-  padding-top: 20%;
+
+.logoFooter {
+  height: 30vh;
 }
+
 .navegue {
-  /* Define que os texto ficarão um abaixo do outro*/
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-area: 'navegue';
+  justify-items:center;
+  width: 35vw;
+  height: 25vh;
+  border-right: solid #58595B 0.2vw;
+  grid-template-areas: 
+  'titulo'
+  'areaNavigation' ;
 
-  /* Forma usada para mudar a posição dos elementos*/
-  padding-left: 10%;
-  width: 25%;
 }
-.textoCima {
-  /* Fonte que será usada*/
-  font-family: 'Cabin', sans-serif;
 
-  /*Configurações do tamanho e cor da letra*/
+.tituloNav {
+  font-family: 'Montserrat', sans-serif;
   color: #58595b;
-  font-size: 1.8em;
+  padding-right: 8vw;
+  justify-self: center;
+  font-size: 2vw;
+  font-weight: bold;
+}
+
+.areaNavigation {
+  display: grid;
+  grid-area: 'areaNavigation';
+  grid-template-areas: 'home livros usuarios';
+  grid-auto-columns: 8vw;
+  width: 30vw;
+  padding-bottom: 3vh;
+}
+
+.home {
+  text-decoration: none;
+  justify-content: center;
+  padding-left: 0.5vw;
+  padding-bottom: 0.9vw;
+  height: 2vw;
+  border-right: 2px solid #facdbb;
+}
+
+.livros {
+  text-decoration: none;
+  justify-content: center;
+  align-content: center;
+  padding-left: 0.5vw;
+  padding-bottom: 0.9vw;
+  height: 2vw;
+  border-right: 2px solid #facdbb;
+}
+
+.usuarios {
+  text-decoration: none;
+  justify-content: center;
+  padding-left: 0.9vw;
+  height: min-content;
+}
+
+.navigation {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5vw;
   font-weight: bolder;
   line-height: 0px;
+  color: #facdbb;
 }
-.links {
-  /* Define os textos em linha, com o wrap que quebra a linha, ajudando
-  na responsividade e com o justify-content centralizando o texto*/
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
 
-  /*Configurações da fonte*/
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.4em;
-  font-weight: 400;
-  line-height: 0px;
-  color: #facdbb;
-}
-.links > a {
-  text-decoration: none;
-}
-.links > a > p {
-  color: #facdbb;
-}
-.links > a > p:hover {
-  color: #facdbbb6;
+.navigation:hover {
+  color: #facdbb8f;
 }
 
 .contatos {
-  /* Define que os texto ficarão um abaixo do outro*/
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-area: 'contatos';
+  justify-items: center;
+  width: 34.5vw;
+  height: 25vh;
+  grid-template-areas: 
+    'titulo'
+    'contatosTexto';
+}
 
-  /* Forma usada para mudar a posição dos elementos*/
-  width: 45%;
-  padding-right: 5%;
+.tituloCont {
+  font-family: 'Montserrat', sans-serif;
+  color: #58595b;
+  padding-right: 2vw;
+  justify-self: center;
+  font-size: 2vw;
+  font-weight: bolder;
 }
 
 .contatosTexto {
-  /*Configurações da fonte*/
+  display: grid;
+  grid-area: 'conatosTexto';
+  justify-items: center;
+  align-content: start;
+  grid-template-areas: 
+    'email'
+    'telefones';
+}
+
+.email {
+  display: grid;
+  grid-area: 'email';
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.4em;
-  font-weight: 400;
-  line-height: 0;
+  font-size: 1.5vw;
+  font-weight: bolder;
+  line-height: 0px;
   color: #facdbb;
 }
-.numeroTelefone {
-  /* Define os textos em linha, com o wrap que quebra a linha, ajudando
-  na responsividade e com o justify-content centralizando o texto*/
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
+
+.telefones{
+  display: grid;
+  grid-area: 'telefones';
+  justify-items: center;
+  grid-template-areas: 'telefone1 telefone2';
 }
 
-.linha {
-  /* Forma usada para mudar a posição dos elementos*/
-  padding-top: 10px;
-  padding-left: 60px;
-  padding-bottom: 10px;
-
-  /* Forma usada para ajustar a imagem*/
-  width: 3px;
-  height: auto;
-  min-height: 120px;
+.telefone1 {
+  display: grid;
+  grid-area: 'telefone1';
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5vw;
+  font-weight: bolder;
+  line-height: 0px;
+  color: #facdbb;
 }
+
+.telefone2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5vw;
+  font-weight: bolder;
+  line-height: 0px;
+  color: #facdbb;
+}
+
 
 /* Responsividade */
 
