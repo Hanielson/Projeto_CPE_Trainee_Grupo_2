@@ -1,0 +1,150 @@
+body{
+    background-color: #ECEEED;
+}
+
+.perfil{
+    display: grid;
+    grid-area: 'perfil';
+    margin-top: 19vh;
+    justify-content: left;
+    width: 98vw;
+    height: auto;
+    grid-template-rows: 1fr 1.5fr 1.5fr 1.5fr;
+    grid-template-areas: 
+        'areaPerfil'
+        'lendo'
+        'terminado'
+        'parou';
+}
+
+.areaPerfil{
+    display: grid;
+    grid-area: areaPerfil;
+    background-color: #ECEEED;
+    width: 98.7vw;
+    height: 30vh;
+    margin-top: 10vh;
+    grid-template-columns: 1fr 1.5fr 0.5fr;
+    grid-template-areas: 'fotoPerfil dadosPerfil botaoEditar';
+}
+
+.fotoPerfil {
+    background-color: thistle;
+    width: 14vw;
+    border: 1px solid black;
+    height: 14vw;
+    margin-left: 10vw;
+    border-radius: 50%;
+}
+
+.apelido {
+    font-size: 2.5vw;
+    justify-content: left;
+    margin-right: 5vw;
+}
+
+.dadosPerfil{
+ align-items: center;
+ width: 40vw;
+ justify-content: left;
+}
+
+.dadosApelido{
+    display: grid;
+    grid-template-areas: 'cidade generoFavorito';
+}
+
+.cidade {
+    font-size: 1.4vw;
+    font-weight: bolder;
+}
+
+.nomeCidade {
+    margin-left: 0.9vw;
+    padding-right: 1.5vw;
+    height: min-content;
+    font-weight: normal;
+    border-right: 2px solid #58595B;
+}
+
+.generoFavorito{
+    font-size: 1.4vw;
+    font-weight: bolder;
+}
+
+.nomeGenero {
+    margin-left: 0.5vw;
+    height: min-content;
+    font-weight: normal;
+}
+
+.botaoEditar {
+    justify-content: right;
+    width: 1.5vw;
+    margin-right: 30vw;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25), inset 0px 3px 3px rgba(0, 0, 0, 0.25);
+    cursor:pointer;
+}
+
+.botaoEditar:active {
+    box-shadow: none;
+    position: relative;
+    top: 3px;
+}
+
+.lendo{
+    background-color: #A2A3A6;
+    height: 70vh;
+}
+
+.bordaTituloLendo {
+    background-color: #CCB0A5;
+    width: 25vw;
+    height: 6vh;
+
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-bottom: 7vh;
+}
+
+.titulo {
+    font-size: 2vw;
+    margin-left: 7vw;
+    padding-top: 0.6vh;
+}
+
+.terminado{
+    
+    background-color: #ECEEED;
+}
+
+.bordaTituloTerminado {
+    background-color: #58595B;
+    width: 25vw;
+    height: 6vh;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-bottom: 7vh;
+}
+
+.tituloTerminado{
+    color: #ECEEED;
+    font-size: 2vw;
+    margin-left: 5vw;
+    padding-top: 0.6vh;
+}
+
+.parou{
+    grid-row: 1fr;
+    background-color:#CCB0A5;
+    margin-bottom: 5vh;
+}
+
+.bordaTituloParou {
+    background-color: #A2A3A6;
+    width: 25vw;
+    height: 6vh;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-bottom: 7vh;
+}

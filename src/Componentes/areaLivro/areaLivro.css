@@ -1,0 +1,48 @@
+.areaLivro {
+    display: grid;
+    margin-left: 10vw;
+    margin-top: 10vh;
+    grid-template-areas: 'fotoLivro dadosLivro';
+}
+
+.dadosLivro {
+    margin-left: 4vw;
+    height: 40vh;
+    margin-bottom: 8vh;
+    row-gap: 0.5vh;
+}
+
+.fotoLivro {
+    border: solid 1px black;
+    height: 40vh;
+}
+
+.tituloLivro {
+    font-size: 2vw;
+    color: rgba(0, 0, 0, 0.767);
+}
+
+.autorLivro {
+    color: rgba(0, 0, 0, 0.767);
+    font-size: 1.4vw;
+    font-style: italic;
+}
+
+.notaLivro {
+    color: #58595B;
+    font-size: 1.6vw;
+    margin-left: 15vw;
+}
+
+.opiniaoUsuario {
+    width: 47vw;
+    font-size: 1.2vw;
+}
+
+.saibaMais {
+    color: #facdbb;
+    align-content: end;
+    font-weight: 900;
+    margin-left: 42vw;
+    justify-content: right;
+}
