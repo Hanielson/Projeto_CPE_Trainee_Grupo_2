@@ -29,7 +29,7 @@
 }
 
 .notaLivro {
-    color: #58595B;
+    color: rgba(0, 0, 0, 0.767);
     font-size: 1.6vw;
     margin-left: 15vw;
 }
@@ -37,12 +37,4 @@
 .opiniaoUsuario {
     width: 47vw;
     font-size: 1.2vw;
-}
-
-.saibaMais {
-    color: #facdbb;
-    align-content: end;
-    font-weight: 900;
-    margin-left: 42vw;
-    justify-content: right;
 }

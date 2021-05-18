@@ -23,9 +23,13 @@ body{
     background-color: #ECEEED;
     width: 98.7vw;
     height: 30vh;
-    margin-top: 10vh;
-    grid-template-columns: 1fr 1.5fr 0.5fr;
+    margin-top: 5vh;
+    grid-template-columns: 1fr 2fr 0.2fr;
     grid-template-areas: 'fotoPerfil dadosPerfil botaoEditar';
+}
+
+.areaBotoes{
+    width: 10vw;
 }
 
 .fotoPerfil {
@@ -33,7 +37,7 @@ body{
     width: 14vw;
     border: 1px solid black;
     height: 14vw;
-    margin-left: 10vw;
+    margin-left: 5vw;
     border-radius: 50%;
 }
 
@@ -44,13 +48,16 @@ body{
 }
 
 .dadosPerfil{
- align-items: center;
- width: 40vw;
- justify-content: left;
+    display: grid;
+    align-items: center;
+    width: 50vw;
+    justify-content: left;
+
 }
 
 .dadosApelido{
     display: grid;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: 'cidade generoFavorito';
 }
 
@@ -60,28 +67,68 @@ body{
 }
 
 .nomeCidade {
+    font-size: 1.3vw;
     margin-left: 0.9vw;
-    padding-right: 1.5vw;
     height: min-content;
+    width: 10vw;
     font-weight: normal;
-    border-right: 2px solid #58595B;
+    border: none;    
 }
 
-.generoFavorito{
+.generoFavorito {
     font-size: 1.4vw;
+    padding-left: 4vw;
     font-weight: bolder;
+    height: min-content;
+    border-left: 2px solid #58595B;
 }
 
 .nomeGenero {
     margin-left: 0.5vw;
     height: min-content;
     font-weight: normal;
+    border: none;
+    width: 7vw;
+    font-size: 1.3vw;
+}
+
+.fraseUsuario {
+    font-size: 1.4vw;
+    font-weight: bolder;
+}
+
+.frase {
+    font-size: 1vw;
+    margin-left: 0.9vw;
+    height: min-content;
+    margin: none;
+    width: 30vw;
+    font-weight: normal;
+    border: none;    
 }
 
 .botaoEditar {
     justify-content: right;
     width: 1.5vw;
     margin-right: 30vw;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25), inset 0px 3px 3px rgba(0, 0, 0, 0.25);
+    cursor:pointer;
+}
+
+.botaoSalvar {
+    justify-content: right;
+    width: 1.5vw;
+    margin-right: 30vw;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25), inset 0px 3px 3px rgba(0, 0, 0, 0.25);
+    cursor:pointer;
+}
+
+.botaoCancelar {
+    justify-content: right;
+    align-content: end;
+    width: 1.5vw;
+    margin-right: 30vw;
+    margin-top: 1vh;
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25), inset 0px 3px 3px rgba(0, 0, 0, 0.25);
     cursor:pointer;
 }
@@ -107,7 +154,7 @@ body{
     margin-bottom: 7vh;
 }
 
-.titulo {
+.tituloLendo {
     font-size: 2vw;
     margin-left: 7vw;
     padding-top: 0.6vh;
@@ -147,4 +194,10 @@ body{
     border-bottom-right-radius: 30px;
     border-top-right-radius: 30px;
     margin-bottom: 7vh;
+}
+
+.tituloParou {
+    font-size: 2vw;
+    margin-left: 7vw;
+    padding-top: 0.6vh;
 }
