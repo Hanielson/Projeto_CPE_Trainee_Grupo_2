@@ -3,19 +3,20 @@
 #nav{
     position: fixed;
     width: 100%;
-    height: 120px;
+    height: 88px;
     top: 0px;
     left: 0px;
     right: 0px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: 24px
+    font-size: 20px;
+    z-index: 5;
 }
 
 #Logo{
     float: left;
-    width: 120px;
+    width: 80px;
     padding-left: 80px;
     padding-top: 20px
 }
@@ -48,7 +49,7 @@
 }
 
 .nav1 a{
-    padding: 45px 30px ;
+    padding: 2rem 30px ;
     display: block;
     color: #58595B;
     text-align: center;
@@ -63,4 +64,52 @@
 .active{
     background-color: #58595B;
     color: #ECEEED;
+}
+
+.dropdown-button{
+    display: none;
+}
+
+.dropdown-item{
+    display: block;
+    width: 100%;
+    padding: 1rem 2.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    background-color: #ccb0a5;
+    text-decoration: none;
+}
+
+.dropdown-item:hover{
+    background-color: #58595B;
+    color: #ECEEED;
+}
+
+.dropdown-menu{
+    margin-top: 25px;
+    z-index: -5;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 10px #58595B;
+}
+.btn#dropdown-basic{
+    background:none;
+    border: none;
+    font-size: 25px;
+    color: #58595B;
+    cursor: pointer;
+}
+@media (max-width:970px){
+    .dropdown-button{
+        display: initial;
+        float: right;
+        padding: 30px;
+    }
+    #buttons{
+        display: none;
+    }
 }
