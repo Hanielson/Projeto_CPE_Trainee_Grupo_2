@@ -70,7 +70,7 @@ body{
     font-size: 1.3vw;
     margin-left: 0.9vw;
     height: min-content;
-    width: 10vw;
+    width: min-content;
     font-weight: normal;
     border: none;    
 }
@@ -80,7 +80,7 @@ body{
     padding-left: 4vw;
     font-weight: bolder;
     height: min-content;
-    border-left: 2px solid #58595B;
+    border-left: 0.15vw solid #58595B;
 }
 
 .nomeGenero {
@@ -95,14 +95,14 @@ body{
 .fraseUsuario {
     font-size: 1.4vw;
     font-weight: bolder;
+    width: max-content;
 }
 
 .frase {
-    font-size: 1vw;
+    font-size: 1.3vw;
     margin-left: 0.9vw;
     height: min-content;
     margin: none;
-    width: 30vw;
     font-weight: normal;
     border: none;    
 }
@@ -110,7 +110,6 @@ body{
 .botaoEditar {
     justify-content: right;
     width: 1.5vw;
-    margin-right: 30vw;
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25), inset 0px 3px 3px rgba(0, 0, 0, 0.25);
     cursor:pointer;
 }
@@ -141,7 +140,6 @@ body{
 
 .lendo{
     background-color: #A2A3A6;
-    height: 70vh;
 }
 
 .bordaTituloLendo {
@@ -200,4 +198,104 @@ body{
     font-size: 2vw;
     margin-left: 7vw;
     padding-top: 0.6vh;
+}
+
+@media (max-width: 538px) {
+        .perfil{
+            margin-top: 14vh;
+        }
+        .areaPerfil{
+            height: max-content;
+        }
+        .fotoPerfil{
+            height: 25vw;
+            width: 25vw;
+            margin-top: 5vh;
+        }
+        .dadosPerfil{
+            margin-left: 5vw;
+            width: max-content;
+        }
+        .dadosApelido{
+            display: flex;
+            flex-direction: column;
+        }
+        .apelido{
+            font-size: 4.4vw;
+        }
+        .cidade{
+            font-size: 2.5vw;
+        }
+        .nomeCidade{
+            font-size: 2.5vw;
+            width: min-content;
+        }
+        .generoFavorito{
+            border: none;
+            margin: none;
+            font-size: 2.2vw;
+            /* padding-left: 0vw; */
+        }
+        .nomeGenero{
+            font-size: 2.5vw;
+            width: min-content;
+        }
+        .fraseUsuario{
+            font-size: 2.2vw;
+            width: max-content;
+            flex-direction: column;
+            align-self: left;
+        }
+        .frase{
+            font-size: 2vw;
+            width: 40vw;
+            margin: initial;
+        }
+        .botaoEditar{
+            width: 3vw;
+        }
+        .botaoCancelar{
+            width: 3vw;
+        }
+        .botaoSalvar{
+            width: 3vw;
+        }
+        .bordaTituloLendo{
+            margin: initial;
+            width: 40vw;
+            height: 5vh;
+        }
+        .bordaTituloTerminado{
+            margin: initial;
+            width: 40vw;
+            height: 5vh;
+        }
+        .bordaTituloParou{
+            margin: initial;
+            width: 40vw;
+            height: 5vh;
+        }
+        .tituloLendo{
+            font-size: 4vw;
+            padding-top: 1.4vh;
+        }
+        .tituloTerminado{
+            font-size: 4vw;
+            padding-top: 1.4vh;
+        }
+        .tituloParou{
+            font-size: 4vw;
+            padding-top: 1.4vh;
+        }
+}
+
+@media(max-width: 425px){
+    .perfil{
+        margin-top: 18vh;
+        grid-template-columns: max-content;
+        grid-template-rows: auto;
+    }
+    .areaPerfil{
+        margin-bottom: 10vh;
+    }
 }
