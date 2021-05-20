@@ -4,7 +4,6 @@
   display: grid;
   grid-area: 'footer';
   grid-template-areas: 'top-box';
-  align-items: flex-end;
   align-self: end;
 }
 
@@ -12,7 +11,7 @@
   display: grid;
   grid-area: 'top-box';
   height: 30vh;
-  width: 98.7vw;
+  width: 100%;
   align-items: center;
   grid-template-areas: 'logo navegue contatos';
   grid-template-columns: 1fr 3fr 3fr;
@@ -35,7 +34,7 @@
   height: 25vh;
   border-right: solid #58595B 0.2vw;
   grid-template-areas: 
-  'titulo'
+  'tituloNav'
   'areaNavigation' ;
 
 }
@@ -64,23 +63,19 @@
   padding-left: 0.5vw;
   padding-bottom: 0.9vw;
   height: 2vw;
-  border-right: 2px solid #facdbb;
 }
 
 .livros {
   text-decoration: none;
   justify-content: center;
   align-content: center;
-  padding-left: 0.5vw;
   padding-bottom: 0.9vw;
   height: 2vw;
-  border-right: 2px solid #facdbb;
 }
 
 .usuarios {
   text-decoration: none;
   justify-content: center;
-  padding-left: 0.9vw;
   height: min-content;
 }
 
@@ -164,58 +159,61 @@
 
 /* Responsividade */
 
-@media (max-width: 1100px) {
-  .logo img {
-    padding-top: 45%;
+@media (max-width: 538px) {
+  .top-box{
+    height: 20vh;
+    align-items: initial;
   }
-  .links {
-    flex-direction: column;
-    align-items: center;
+  .logoFooter{
+    height: 18vh;
+    align-content: center;
+    margin-top: 1.5vh;
   }
-  .apagar {
-    display: none;
+  .navegue{
+    height: 15vh;
+    border: none;
   }
-}
-@media (max-width: 690px) {
-  .top-box {
-    font-size: 10px;
+  .areaNavigation{
+    row-gap: 1.5vw;
+    grid-template-areas:
+    'home'
+    'livros';
+    margin-right: 5vw;
+    padding: initial;
+    justify-items: center;
+    width: max-content;
   }
-  .logo img {
-    height: 70px;
-    padding-top: 45%;
-    padding-left: 40%;
+  .navigation{
+    font-size: 3vw;
+    row-gap: 1vw;
   }
-  .linha {
-    height: auto;
-    padding-left: 25px;
+  .tituloNav{
+    font-size: 4vw;
   }
-}
-@media (max-width: 500px) {
-  .top-box {
-    font-size: 8px;
+  .home{
+    border: none;
   }
-  .logo img {
-    height: 50px;
-    padding-top: 45%;
-    padding-left: 40%;
+  .livros{
+    border: none;
   }
-  .linha {
-    height: auto;
-    min-height: 90px;
+  .contatos{
+    height: min-content;
   }
-}
-@media (max-width: 360px) {
-  .top-box {
-    font-size: 6px;
+  .telefones{
+    grid-template-areas: 
+      'telefone1'
+      'telefone2';
   }
-  .logo img {
-    height: 40px;
-    padding-top: 45%;
-    padding-left: 40%;
+  .tituloCont{
+    font-size: 4vw;
   }
-  .linha {
-    height: auto;
-    min-height: 60px;
-    padding-left: 18px;
+  .email{
+    font-size: 2.5vw;
+  }
+  .telefone1{
+    font-size: 2.5vw;
+  }
+  .telefone2{
+    font-size: 2.5vw;
   }
 }

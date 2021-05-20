@@ -52,7 +52,7 @@ export default function Perfil() {
                             />
                         </p>
                     </div>
-                    <div  className={'areaBotoes'}>
+                    <div>
                         {
                             estaEmEdicao &&
                             <img
@@ -63,7 +63,7 @@ export default function Perfil() {
                         }
                         {
                             !estaEmEdicao &&
-                            <div>
+                            <div className={'areaBotoes'}>
                                 <img
                                     className={'botaoSalvar'}
                                     onClick={() => setEstaEmEdicao(true)}

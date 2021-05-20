@@ -6,8 +6,7 @@ body{
     display: grid;
     grid-area: 'perfil';
     margin-top: 19vh;
-    justify-content: left;
-    width: 98vw;
+    width: 100%;
     height: auto;
     grid-template-rows: 1fr 1.5fr 1.5fr 1.5fr;
     grid-template-areas: 
@@ -21,7 +20,7 @@ body{
     display: grid;
     grid-area: areaPerfil;
     background-color: #ECEEED;
-    width: 98.7vw;
+    width: 100%;
     height: 30vh;
     margin-top: 5vh;
     grid-template-columns: 1fr 2fr 0.2fr;
@@ -29,7 +28,11 @@ body{
 }
 
 .areaBotoes{
-    width: 10vw;
+    display: grid;
+    width: 5vw;
+    grid-template-areas:
+    'botaoSalvar'
+    'botaoCancelar' ;
 }
 
 .fotoPerfil {
@@ -117,7 +120,6 @@ body{
 .botaoSalvar {
     justify-content: right;
     width: 1.5vw;
-    margin-right: 30vw;
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25), inset 0px 3px 3px rgba(0, 0, 0, 0.25);
     cursor:pointer;
 }
@@ -126,7 +128,6 @@ body{
     justify-content: right;
     align-content: end;
     width: 1.5vw;
-    margin-right: 30vw;
     margin-top: 1vh;
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25), inset 0px 3px 3px rgba(0, 0, 0, 0.25);
     cursor:pointer;
@@ -140,6 +141,7 @@ body{
 
 .lendo{
     background-color: #A2A3A6;
+    width: 100%;
 }
 
 .bordaTituloLendo {
@@ -159,7 +161,7 @@ body{
 }
 
 .terminado{
-    
+    width: 100%;
     background-color: #ECEEED;
 }
 
@@ -180,9 +182,9 @@ body{
 }
 
 .parou{
-    grid-row: 1fr;
     background-color:#CCB0A5;
     margin-bottom: 5vh;
+    width: 100%;
 }
 
 .bordaTituloParou {
@@ -293,7 +295,6 @@ body{
     .perfil{
         margin-top: 18vh;
         grid-template-columns: max-content;
-        grid-template-rows: auto;
     }
     .areaPerfil{
         margin-bottom: 10vh;

@@ -1,0 +1,21 @@
+.usuario{
+    display: grid;
+    width: 30vw;
+    margin-top: 3vh;
+    row-gap: 2vh;
+    justify-content: center;
+    grid-template-areas: 
+    'fotoUsuario'
+    'nomeUsuario';
+}
+
+.fotoUsuario{
+   display: grid;
+    width: 10vw;
+    border-radius: 50%;
+}
+
+.nomeUsuario{
+    font-size: 1.5vw;
+    margin: auto;
+}
