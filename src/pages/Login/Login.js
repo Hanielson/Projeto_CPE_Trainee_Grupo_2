@@ -1,21 +1,34 @@
 import React, { useState } from 'react'
+import { useHistory } from 'react-router'
 import Header from '../../Componentes/header/index'
 import Footer from '../../Componentes/footer/index'
 import InputFormulario from '../../Componentes/input-formulario/InputFormulario'
+import api from '../../services/api'
 import './login.css'
 
 
-/**
- * @todo criar o index
- */
+/**@todo criar o index*/
 export default function Login() {
-    const [usuario, setUsuario] = useState([])
+    const [email , setEmail] = useState();
+    const [password , setPassword] = useState();
+    const history = useHistory();
 
-    function handleInfoChange(e) {
-        const key = e.target.value
-        const newUsuario = usuario
-        newUsuario[key] = e.target.value
-        setUsuario(newUsuario)
+    async function login(e){
+        e.preventDefault();
+        try{
+            const response = api.post('/login', {email , password});
+            alert("Bem vindo ", response.data.user.username);
+            console.log(response);
+        }
+        catch(error){
+           if(error.response.status == 403){
+                alert("Credenciais inválidas!");
+            }
+            else{
+                alert(error.response.data.notification);
+            }
+            console.warn(error);
+        }
     }
 
     return (
@@ -29,21 +42,21 @@ export default function Login() {
                             className={'inputEmail'}
                             type={'text'}
                             name={'email'}
-                            onChange={handleInfoChange}
+                            onChange={(e) => setEmail(e.target.value)}
                         />
                         <InputFormulario
                             textoInput={'Senha'}
                             className={'inputSenha'}
                             type={'password'}
                             name={'senha'}
-                            onChange={handleInfoChange}
+                            onChange={(e) => setPassword(e.target.value)}
                         />
                     </div>
                     <div className={'areaBotao'}>
-                        <a className={'botaoSubmit'} href={'/'} > Entrar </a>
+                        <button className={'botaoSubmit'}  type="button" value="text" onClick={login}> Entrar </button>
                         <div className={'semLogin'} > 
                             Não tem conta? 
-                            <a className={'cadastreSe'} href={'/cadastro'} > Cadastre-se! </a>
+                            <a className={'cadastreSe'}  href={'/cadastro'}> Cadastre-se! </a>
                         </div>
                     </div>
                 </div>
