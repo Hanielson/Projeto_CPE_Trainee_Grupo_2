@@ -1,6 +1,6 @@
 .usuario{
     display: grid;
-    width: 30vw;
+    width: 10vw;
     margin-top: 3vh;
     row-gap: 2vh;
     justify-content: center;
@@ -16,6 +16,21 @@
 }
 
 .nomeUsuario{
+    display: grid;
     font-size: 1.5vw;
     margin: auto;
+    text-align: center;
+}
+
+@media(max-width: 768px){
+    .fotoUsuario{
+        width: 15vw;
+    }
+    .nomeUsuario{
+        font-size: 2vw;
+        padding-left: 0px;
+    }
+    .usuario{
+        margin-top: 0vh;
+    }
 }

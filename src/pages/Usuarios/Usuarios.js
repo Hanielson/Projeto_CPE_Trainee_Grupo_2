@@ -24,13 +24,13 @@ export default function Usuarios() {
                         <div className={'usuario2'}>
                             <Usuario
                                 linkFotoUsuario={"https://i.ibb.co/8rY9Gnt/perfil-Homem2.jpg"}
-                                nomeUsuario={'Haniel Cardoso'}
+                                nomeUsuario={'Nome Sobrenome'}
                             />
                         </div>
                         <div className={'usuario3'}>
                             <Usuario
                                 linkFotoUsuario={"https://i.ibb.co/nbqk75R/oie-hs-HKvzzs-Zv-HT.jpg"}
-                                nomeUsuario={'Felipe Lopes'}
+                                nomeUsuario={'Nome Sobrenome'}
                             />
                         </div>
                     </div>
@@ -38,13 +38,13 @@ export default function Usuarios() {
                         <div className={'usuario4'}>
                             <Usuario
                                 linkFotoUsuario={"https://i.ibb.co/NW22bTG/perfi-Mulher.jpg"}
-                                nomeUsuario={'Emanuella Ferraz'}
+                                nomeUsuario={'Nome Sobrenome'}
                             />
                         </div>
                         <div className={'usuario5'}>
                             <Usuario
                                 linkFotoUsuario={"https://i.ibb.co/n8FxmqS/perfil-Homem1.jpg"}
-                                nomeUsuario={'Renan Castro'}
+                                nomeUsuario={'Nome Sobrenome'}
                             />
                         </div>
                         <div className={'usuario6'}>

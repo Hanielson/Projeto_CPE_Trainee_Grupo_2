@@ -5,6 +5,10 @@
     align-items: center;
     grid-template-areas: 
     'bordaTituloPag'
+    'areaUsuarios';
+}
+.areaUsuarios{
+    grid-template-areas: 
     'areaDeCima'
     'areaDeBaixo';
 }
@@ -18,6 +22,7 @@
 }
 .tituloPag{
     justify-content: center;
+    color: #ECEEED;
     margin: auto;
     margin-top: 1vh;
     font-size: 2.5vw;
@@ -39,4 +44,56 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
     'usuario4 usuario5 usuario6' ;
+}
+.usuario1{
+    justify-content: center;
+    text-justify: center;
+}
+.usuario2{
+    justify-content: center;
+}
+.usuario3{
+    justify-content: center;
+}
+.usuario4{
+    justify-content: center;
+}
+.usuario5{
+    justify-content: center;
+}
+.usuario6{
+    justify-content: center;
+}
+@media(max-width: 768px){
+    .tituloPag{
+        font-size: 2.8vw;
+        margin-top: 1.5vw;
+    }
+    .pagUsuarios{
+        padding-top: 16vh;
+    }
+}
+@media(max-width: 538px){
+    .areaUsuarios{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: none;
+        grid-template-areas: 'areaDeCima areaDeBaixo';
+    }
+    .areaDeCima{
+        grid-template-areas:
+            'usuario1' 
+            'usuario2' 
+            'usuario3' ;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: none;
+    }
+    .areaDeBaixo{
+        grid-template-areas:
+            'usuario4' 
+            'usuario5' 
+            'usuario6' ;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: none;
+    }
+
 }
