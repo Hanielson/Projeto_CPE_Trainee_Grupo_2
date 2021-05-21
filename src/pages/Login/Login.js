@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Header from '../../Componentes/header/index'
 import Footer from '../../Componentes/footer/index'
+import {login} from '../../services/auth'
 import InputFormulario from '../../Componentes/input-formulario/InputFormulario'
 import './login.css'
 
