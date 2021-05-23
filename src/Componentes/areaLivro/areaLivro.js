@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./areaLivro.css";
 
-export default function AreaLivros({ tituloLivro, autorLivro, linkFotoLivro, opiniaoUsuario, notaLivro }) {
+export default function AreaLivro({ tituloLivro, autorLivro, linkFotoLivro, opiniaoUsuario, notaLivro }) {
     return (
         <div className={'areaLivro'}>
             <img className={'fotoLivro'} src={linkFotoLivro}/>

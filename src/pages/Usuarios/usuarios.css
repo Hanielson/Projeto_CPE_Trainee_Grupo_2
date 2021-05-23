@@ -1,7 +1,7 @@
 .pagUsuarios{
     display: grid;
     padding-top: 20vh;
-    height: 100vh;
+    height: auto;
     align-items: center;
     grid-template-areas: 
     'bordaTituloPag'
@@ -11,6 +11,8 @@
     grid-template-areas: 
     'areaDeCima'
     'areaDeBaixo';
+    padding-bottom: 6vh;
+    padding-top: 3vh;
 }
 .bordaTituloPag{
     background-color: #a2a3a6;
@@ -25,12 +27,11 @@
     color: #ECEEED;
     margin: auto;
     margin-top: 1vh;
-    font-size: 2.5vw;
+    font-size: 2.3vw;
 }
 .areaDeCima{
     height: 34vh;
     display: grid;
-    align-items: center;
     justify-items: center;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
@@ -39,7 +40,6 @@
 .areaDeBaixo{
     height: 34vh;
     display: grid;
-    align-items: center;
     justify-items: center;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
@@ -68,32 +68,6 @@
     .tituloPag{
         font-size: 2.8vw;
         margin-top: 1.5vw;
+        padding-left: 0px;
     }
-    .pagUsuarios{
-        padding-top: 16vh;
-    }
-}
-@media(max-width: 538px){
-    .areaUsuarios{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: none;
-        grid-template-areas: 'areaDeCima areaDeBaixo';
-    }
-    .areaDeCima{
-        grid-template-areas:
-            'usuario1' 
-            'usuario2' 
-            'usuario3' ;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: none;
-    }
-    .areaDeBaixo{
-        grid-template-areas:
-            'usuario4' 
-            'usuario5' 
-            'usuario6' ;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: none;
-    }
-
 }

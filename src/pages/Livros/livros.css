@@ -1,0 +1,71 @@
+.livrosPag{
+    display: grid;
+    grid-template-rows: auto;
+    padding-top: 20vh;
+    grid-template-columns: none;
+    grid-template-areas: 
+    'bordaTituloLivros'
+    'areaDosLivros';
+}
+.bordaTituloLivros{
+    background-color: #a2a3a6 ;
+    width: 40vw;
+    height: 7vh;
+    margin-left: 30vw;
+    margin-bottom: 10vh;
+    border-radius: 40vw;
+    align-content: center;
+}
+.tituloPagLivros{
+    justify-content: center;
+    color: #ECEEED;
+    margin: auto;
+    margin-top: 1vh;
+    font-size: 2.3vw;
+}
+.areaDosLivros{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 5vw;
+    grid-template-rows: none;
+    grid-template-areas: 'areaDaDireitaLivros areaDaEsquerdaLivros';
+}
+.areaDaDireitaLivros{
+    display: grid;
+    row-gap: 5vh;
+    margin-bottom: 8vh;
+    grid-template-areas:
+    'cimaDireita'
+    'baixoDireita' ;
+}
+.cimaDireita{
+    display: grid;
+    grid-template-areas: 'livro1 livro2';
+}
+.baixoDireita{
+    display: grid;
+    grid-template-areas: 'livro3 livro4';
+}
+.areaDaEsquerdaLivros{
+    display: grid;
+    row-gap: 5vh;
+    margin-bottom: 8vh;
+    grid-template-areas:
+    'cimaEsquerda'
+    'baixoEsquerda' ;
+}
+.cimaEsquerda{
+    display: grid;
+    grid-template-areas: 'livro5 livro6';
+}
+.baixoEsquerda{
+    display: grid;
+    grid-template-areas: 'livro7 livro8';
+}
+@media(max-width: 768px){
+    .tituloPagLivros{
+        font-size: 2.8vw;
+        margin-top: 1.5vw;
+        padding-left: 0px;
+    }
+}
