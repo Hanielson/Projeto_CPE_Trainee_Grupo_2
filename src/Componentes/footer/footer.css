@@ -30,7 +30,6 @@
   display: grid;
   grid-area: 'navegue';
   justify-items:center;
-  width: 35vw;
   height: 25vh;
   border-right: solid #58595B 0.2vw;
   grid-template-areas: 

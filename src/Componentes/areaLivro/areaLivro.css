@@ -74,13 +74,36 @@
         height: 30vh;
     }
     .dadosLivro{
-        width: max-content;
+        width: fit-content;
+        height: auto;
         margin-top: 3vw;
         margin-left: 0vw;
         margin-bottom: 0vw;
     }
     .notaLivro{
         margin-left: 2vw;
+        width: max-content;
+    }
+}
+@media(max-width: 320px){
+    .areaLivro{
+        margin-left: 3vw;
+        line-height: normal;
+    }
+    .fotoLivro{
+        height: 25vh;
+        margin-top: 4vh;
+    }
+    .tituloLivro{
+        font-size: 3.5vw;
+        height: min-content;
+        line-height: normal;
+    }
+    .autorLivro{
+        font-size: 3vw;
+    }
+    .notaLivro{
+        font-size: 3vw;
         width: max-content;
     }
 }

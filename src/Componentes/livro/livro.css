@@ -51,3 +51,25 @@
         font-size: 1.5vw;
     }
 }
+@media(max-width:538px){
+    .livro{
+        width: fit-content;
+        margin-left: 2vw;
+    }
+    .capaLivro{
+        width: 30vw;
+    }
+    .tituloDoLivro{
+        font-size: 5vw;
+        line-height: normal;
+    }
+    .autor{
+        font-size: 4vw;
+    }
+    .notaMedia{
+        font-size: 4vw;
+    }
+    .numeroNota{
+        font-size: 4vw;
+    }
+}

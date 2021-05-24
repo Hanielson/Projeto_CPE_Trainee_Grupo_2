@@ -45,6 +45,9 @@
     grid-template-areas: 
     'usuario4 usuario5 usuario6' ;
 }
+.linkUsuario{
+    text-decoration: none;
+}
 .usuario1{
     justify-content: center;
     text-justify: center;

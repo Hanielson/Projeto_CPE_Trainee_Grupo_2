@@ -1,0 +1,140 @@
+[
+    {
+        "nome": "Luana Pina",
+        "cidade": "Belo Horizonte",
+        "generoFavorito": "Romance",
+        "frase": "Lorem tipsum dolor sit amet, consectetur adipiscing",
+        "foto": "https://i.ibb.co/wRH2DmY/woman-1284411-1920-1.png",
+
+        "fotoLivroLendo": "https://i.ibb.co/MMw89Cp/image-6.png",
+        "tituloLivroLendo":"A menina que roubava livros",
+        "autorLivroLendo": "Markus Zusak",
+        "notaLivroLendo": "6,0",
+
+        "fotoLivroTerminou": "https://i.ibb.co/d2hsjB2/image-7.png",
+        "tituloLivroTerminou":"O menino do dedo verde",
+        "autorLivroTerminou": "Maurice Druon",
+        "notaLivroTerminou": "9,0",
+
+        "fotoLivroParou": "https://imgbb.online/images/2021/05/23/livro-azul_andrew-lang_CAPA_21_09_2017_FINAL_CURVAS-01239cc11ec97a8891.jpg",
+        "tituloLivroParou":"O fabuloso livro azul",
+        "autorLivroParou": "Andrew Lang",
+        "notaLivroParou": "4,0"
+    },
+
+    {
+        "nome": "Nome Sobrenome",
+        "cidade": "Belo Horizonte",
+        "generoFavorito": "Suspense",
+        "frase": "Lorem tipsum dolor sit amet, consectetur adipiscing",
+        "foto": "https://i.ibb.co/8rY9Gnt/perfil-Homem2.jpg",
+
+        "fotoLivroLendo": "https://imgbb.online/images/2021/05/23/d816c439000eea434f997ff7cedebc420eb43a10be903d1e.jpg",
+        "tituloLivroLendo":"Coraline",
+        "autorLivroLendo": "Neil Gaiman",
+        "notaLivroLendo": "8,0",
+
+        "fotoLivroTerminou": "https://imgbb.online/images/2021/05/23/197-dracula-de-bram-stoker-first-edition--2f61a6e15fd0e6d7d.jpg",
+        "tituloLivroTerminou":"Drácula",
+        "autorLivroTerminou": "Bram Stoker",
+        "notaLivroTerminou": "10,0",
+
+        "fotoLivroParou": "https://imgbb.online/images/2021/05/23/livro-verde_andrew-lang_CAPA-01a2d782d2a09c63f4.jpg",
+        "tituloLivroParou":"O fabuloso livro verde",
+        "autorLivroParou": "Andrew Lang",
+        "notaLivroParou": "3,0"
+    },
+
+    {
+        "nome": "Nome Sobrenome",
+        "cidade": "Belo Horizonte",
+        "generoFavorito": "Comédia",
+        "frase": "Lorem tipsum dolor sit amet, consectetur adipiscing",
+        "foto": "https://i.ibb.co/nbqk75R/oie-hs-HKvzzs-Zv-HT.jpg",
+
+        "fotoLivroLendo": "https://imgbb.online/images/2021/05/23/livro-vermelho_andrew-lang_CAPA_FINAL_CURVAS-0190c3b96dc53af61c.jpg",
+        "tituloLivroLendo":"O fabuloso livro vermelho",
+        "autorLivroLendo": "Andrew Lang",
+        "notaLivroLendo": "5,0",
+
+        "fotoLivroTerminou": "https://imgbb.online/images/2021/05/23/livro-verde_andrew-lang_CAPA-01a2d782d2a09c63f4.jpg",
+        "tituloLivroTerminou":"O fabuloso livro verde",
+        "autorLivroTerminou": "Andrew Lang",
+        "notaLivroTerminou": "7,0",
+
+        "fotoLivroParou": "https://i.ibb.co/hRqZg7B/image-4.png",
+        "tituloLivroParou":"A última carta de amor",
+        "autorLivroParou": "Jojo Moyes",
+        "notaLivroParou": "4,0"
+    },
+
+    {
+        "nome": "Nome Sobrenome",
+        "cidade": "Belo Horizonte",
+        "generoFavorito": "Ação",
+        "frase": "Lorem tipsum dolor sit amet, consectetur adipiscing",
+        "foto": "https://i.ibb.co/NW22bTG/perfi-Mulher.jpg",
+
+        "fotoLivroLendo": "https://imgbb.online/images/2021/05/23/197-dracula-de-bram-stoker-first-edition--2f61a6e15fd0e6d7d.jpg",
+        "tituloLivroLendo":"Dácula",
+        "autorLivroLendo": "Bram Stoker",
+        "notaLivroLendo": "8,0",
+
+        "fotoLivroTerminou": "https://imgbb.online/images/2021/05/23/d816c439000eea434f997ff7cedebc420eb43a10be903d1e.jpg",
+        "tituloLivroTerminou":"Coraline",
+        "autorLivroTerminou": "Neil Gaiman",
+        "notaLivroTerminou": "10,0",
+
+        "fotoLivroParou": "https://i.ibb.co/hRqZg7B/image-4.png",
+        "tituloLivroParou":"A última carta de amor",
+        "autorLivroParou": "Jojo Moyes",
+        "notaLivroParou": "6,0"
+    },
+
+    {
+        "nome": "Nome Sobrenome",
+        "cidade": "Belo Horizonte",
+        "generoFavorito": "Terror",
+        "frase": "Lorem tipsum dolor sit amet, consectetur adipiscing",
+        "foto": "https://i.ibb.co/n8FxmqS/perfil-Homem1.jpg",
+
+        "fotoLivroLendo": "https://imgbb.online/images/2021/05/23/livro-vermelho_andrew-lang_CAPA_FINAL_CURVAS-0190c3b96dc53af61c.jpg",
+        "tituloLivroLendo":"O fabuloso livro vermelho",
+        "autorLivroLendo": "Andrew Lang",
+        "notaLivroLendo": "5,0",
+
+        "fotoLivroTerminou": "https://imgbb.online/images/2021/05/23/197-dracula-de-bram-stoker-first-edition--2f61a6e15fd0e6d7d.jpg",
+        "tituloLivroTerminou":"Drácula",
+        "autorLivroTerminou": "Bram Stoker",
+        "notaLivroTerminou": "10,0",
+
+        "fotoLivroParou": "https://i.ibb.co/d2hsjB2/image-7.png",
+        "tituloLivroParou":"O menino do dedo verde",
+        "autorLivroParou": "Maurice Duron",
+        "notaLivroParou": "3,0"
+    },
+
+    {
+        "nome": "Nome Sobrenome",
+        "cidade": "Belo Horizonte",
+        "generoFavorito": "Ficção científica",
+        "frase": "Lorem tipsum dolor sit amet, consectetur adipiscing",
+        "foto": "https://i.ibb.co/xmHn68K/perfil.png",
+        
+        "fotoLivroLendo": "https://imgbb.online/images/2021/05/23/livro-azul_andrew-lang_CAPA_21_09_2017_FINAL_CURVAS-01239cc11ec97a8891.jpg",
+        "tituloLivroLendo":"O fabuloso livro azul",
+        "autorLivroLendo": "Andrew Lang",
+        "notaLivroLendo": "5,0",
+
+        "fotoLivroTerminou": "https://imgbb.online/images/2021/05/23/livro-vermelho_andrew-lang_CAPA_FINAL_CURVAS-0190c3b96dc53af61c.jpg",
+        "tituloLivroTerminou":"O fabuloso livro vermelho",
+        "autorLivroTerminou": "Andrew Lang",
+        "notaLivroTerminou": "5,0",
+
+        "fotoLivroParou": "https://imgbb.online/images/2021/05/23/d816c439000eea434f997ff7cedebc420eb43a10be903d1e.jpg",
+        "tituloLivroParou":"Coraline",
+        "autorLivroParou": "Neil Gaiman",
+        "notaLivroParou": "4,0"
+
+    }
+]

@@ -5,6 +5,7 @@
     margin-bottom: 2vh;
     row-gap: 2vh;
     justify-content: center;
+    text-decoration: none;
     grid-template-areas: 
     'fotoUsuario'
     'nomeUsuario';
@@ -23,6 +24,7 @@
     margin: auto;
     text-align: center;
     padding-left: 0px;
+    
 }
 
 @media(max-width: 768px){

@@ -23,7 +23,6 @@ body{
     width: 100%;
     height: 30vh;
     margin-top: 5vh;
-    grid-template-columns: 1fr 2fr 0.2fr;
     grid-template-areas: 'fotoPerfil dadosPerfil botaoEditar';
 }
 
@@ -294,9 +293,26 @@ body{
 @media(max-width: 425px){
     .perfil{
         margin-top: 18vh;
-        grid-template-columns: max-content;
     }
     .areaPerfil{
         margin-bottom: 10vh;
+    }
+    .fotoPerfil{
+        margin-left: 3vw;
+    }
+    .dadosPerfil{
+        margin-left: 0vw;
+    }
+    .cidade{
+        font-size: 3vw;
+    }
+    .generoFavorito{
+        font-size: 3vw;
+    }
+    .fraseUsuario{
+        font-size: 3vw;
+    }
+    .frase{
+        font-size: 2.8vw;
     }
 }

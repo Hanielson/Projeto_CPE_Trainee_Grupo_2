@@ -68,4 +68,52 @@
         margin-top: 1.5vw;
         padding-left: 0px;
     }
+@media(max-width: 538px){
+    .areaDosLivros{
+        grid-template-columns: none;
+        grid-template-areas: 
+        'areaDaDireitaLivros'
+        'areaDaEsquerdaLivros';
+    }
+    .areaDaDireitaLivros{
+        row-gap: 10vh;
+    }
+    .areaDaEsquerdaLivros{
+        row-gap: 10vh;
+    }
+    .cimaDireita{
+        row-gap: 10vh;
+        grid-template-areas:
+        'livro1'
+        'livro2';
+    }
+    .cimaEsquerda{
+        row-gap: 10vh;
+        grid-template-areas:
+        'livro5'
+        'livro6';
+    }
+    .baixoDireita{
+        row-gap: 10vh;
+        grid-template-areas:
+        'livro3'
+        'livro4';
+    }
+    .baixoEsquerda{
+        row-gap: 10vh;
+        grid-template-areas:
+        'livro7'
+        'livro8';
+    }
+    .bordaTituloLivros{
+        width: 80vw;
+        height: 6vh;
+        margin-left: 11vw;
+        margin-bottom: 8vh;
+    }
+    .tituloPagLivros{
+        font-size: 6vw;
+        margin-top: 2.5vh;
+    }
+}
 }

@@ -6,11 +6,13 @@ import Login from './pages/Login/index.js'
 import Livros from './pages/Livros/index.js'
 import Perfil from './pages/Perfil/index.js'
 import Usuarios from './pages/Usuarios/index.js'
+import UsuarioEspecifico from './pages/UsuarioEspecifico/index.js'
 
 export default function Routes() {
     return (
         <BrowserRouter>
             <Switch>
+                <Route path={'/usuarioEspecifico'} component={ UsuarioEspecifico } />
                 <Route path={'/login'} component={ Login } />
                 <Route path={'/cadastro'} component={ Cadastro } />
                 <Route path={'/livros'} component={ Livros } />
