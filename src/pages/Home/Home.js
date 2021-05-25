@@ -61,7 +61,7 @@ export default function Home() {
                     libero vel nulla suscipit tempus. Donec at mauris nec enim pulvinar laoreet.
                     Ut sed ligula a leo venenatis bibendum eget at felis.
                 </p>
-                <img  id={'imagem3'} src={imagem3} alt={'Mulher lendo'}/>
+                <img  id={'imagem3'} src={imagem3}/>
                 
                 </div>
 

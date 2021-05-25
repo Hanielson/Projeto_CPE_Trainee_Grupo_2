@@ -1,0 +1,76 @@
+.pagUsuarios{
+    display: grid;
+    padding-top: 20vh;
+    height: auto;
+    align-items: center;
+    grid-template-areas: 
+    'bordaTituloPag'
+    'areaUsuarios';
+}
+.areaUsuarios{
+    grid-template-areas: 
+    'areaDeCima'
+    'areaDeBaixo';
+    padding-bottom: 6vh;
+    padding-top: 3vh;
+}
+.bordaTituloPag{
+    background-color: #a2a3a6;
+    width: 40vw;
+    height: 7vh;
+    margin-left: 30vw;
+    border-radius: 40vw;
+    align-content: center;
+}
+.tituloPag{
+    justify-content: center;
+    color: #ECEEED;
+    margin: auto;
+    margin-top: 1vh;
+    font-size: 2.3vw;
+}
+.areaDeCima{
+    height: 34vh;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    'usuario1 usuario2 usuario3' ;
+}
+.areaDeBaixo{
+    height: 34vh;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    'usuario4 usuario5 usuario6' ;
+}
+.linkUsuario{
+    text-decoration: none;
+}
+.usuario1{
+    justify-content: center;
+    text-justify: center;
+}
+.usuario2{
+    justify-content: center;
+}
+.usuario3{
+    justify-content: center;
+}
+.usuario4{
+    justify-content: center;
+}
+.usuario5{
+    justify-content: center;
+}
+.usuario6{
+    justify-content: center;
+}
+@media(max-width: 768px){
+    .tituloPag{
+        font-size: 2.8vw;
+        margin-top: 1.5vw;
+        padding-left: 0px;
+    }
+}

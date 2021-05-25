@@ -1,0 +1,33 @@
+.usuarioEspecifico{
+    display: grid;
+    grid-area: 'usuarioEspecifico';
+    margin-top: 19vh;
+    width: 100%;
+    height: auto;
+    grid-template-rows: 1fr 1.5fr 1.5fr 1.5fr;
+    grid-template-areas: 
+        'areaPerfil'
+        'lendo'
+        'terminado'
+        'parou';
+}
+.nomeCidadeUE{
+    width: max-content;
+    margin-left: 0.9vw;
+    font-size: 1.3vw;
+    font-weight: normal;
+}
+
+.nomeGeneroUE{
+    font-size: 1.3vw;
+    margin-left: 0.9vw;
+    width: max-content;
+    font-weight: normal;
+}
+
+.fraseUE{
+    font-size: 1.3vw;
+    width: max-content;
+    font-weight: normal;
+    margin-left: 0.9vw;
+}

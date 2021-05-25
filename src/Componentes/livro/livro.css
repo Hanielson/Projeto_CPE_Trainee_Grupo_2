@@ -1,0 +1,75 @@
+.livro{
+    display: grid;
+    width: 20vw;
+    align-items: center;
+    grid-template-areas: 'capaLivro dadosDoLivro';
+}
+.capaLivro{
+    width: 8vw;
+    border: 1px solid black
+}
+.dadosDoLivro{
+    height: max-content;
+}
+.tituloDoLivro{
+    font-size: 1.5vw;
+    font-weight: 900;
+}
+.autor{
+    font-size: 1.1vw;
+    font-weight: bolder;
+    font-style: italic;
+    color: #CCB0A5;
+    line-height: 0px;
+}
+.notaMedia{
+    font-size: 1.3vw;
+    line-height: 0px;
+}
+.numeroNota{
+    font-size: 1.3vw;
+    line-height: 0px;
+    color: #CCB0A5;
+}
+@media(max-width:768px){
+    .livro{
+        width: 22vw;
+    }
+    .capaLivro{
+        width: 10vw;
+    }
+    .tituloDoLivro{
+        font-size: 1.7vw;
+    }
+    .autor{
+        font-size: 1.4vw;
+    }
+    .notaMedia{
+        font-size: 1.5vw;
+    }
+    .numeroNota{
+        font-size: 1.5vw;
+    }
+}
+@media(max-width:538px){
+    .livro{
+        width: fit-content;
+        margin-left: 2vw;
+    }
+    .capaLivro{
+        width: 25vw;
+    }
+    .tituloDoLivro{
+        font-size: 4.5vw;
+        line-height: normal;
+    }
+    .autor{
+        font-size: 4vw;
+    }
+    .notaMedia{
+        font-size: 4vw;
+    }
+    .numeroNota{
+        font-size: 4vw;
+    }
+}

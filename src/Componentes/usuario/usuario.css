@@ -1,0 +1,41 @@
+.usuario{
+    display: grid;
+    width: 10vw;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+    row-gap: 2vh;
+    justify-content: center;
+    text-decoration: none;
+    grid-template-areas: 
+    'fotoUsuario'
+    'nomeUsuario';
+}
+
+.fotoUsuario{
+   display: grid;
+    width: 10vw;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.nomeUsuario{
+    display: grid;
+    font-size: 1.5vw;
+    margin: auto;
+    text-align: center;
+    padding-left: 0px;
+    
+}
+
+@media(max-width: 768px){
+    .fotoUsuario{
+        width: 15vw;
+    }
+    .nomeUsuario{
+        font-size: 2vw;
+        padding-left: 0px;
+    }
+    .usuario{
+        margin-top: 0vh;
+    }
+}

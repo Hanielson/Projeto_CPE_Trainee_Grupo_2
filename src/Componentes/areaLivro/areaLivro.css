@@ -1,0 +1,109 @@
+.areaLivro {
+    display: grid;
+    margin-left: 10vw;
+    margin-top: 10vh;
+    grid-template-areas: 'fotoLivro dadosLivro';
+}
+
+.dadosLivro {
+    margin-left: 4vw;
+    height: 40vh;
+    margin-bottom: 8vh;
+    row-gap: 0.5vh;
+}
+
+.fotoLivro {
+    border: solid 1px black;
+    height: 40vh;
+}
+
+.tituloLivro {
+    font-size: 2vw;
+    color: rgba(0, 0, 0, 0.767);
+}
+
+.autorLivro {
+    color: rgba(0, 0, 0, 0.767);
+    font-size: 1.4vw;
+    font-style: italic;
+}
+
+.notaLivro {
+    color: rgba(0, 0, 0, 0.767);
+    font-size: 1.6vw;
+    margin-left: 15vw;
+}
+
+.opiniaoUsuario {
+    width: 47vw;
+    font-size: 1.2vw;
+}
+
+@media (max-width: 538px) {
+    .areaLivro{
+        margin-left: 5vw;
+        margin-top: 5vh;
+    }
+    .fotoLivro {
+        height: 35vh;
+        align-content: center;
+        margin-top: 3vh;
+    }
+    .tituloLivro{
+        font-size: 3vw;
+    }
+    .autorLivro{
+        font-size: 2.4vw;
+    }
+    .opiniaoUsuario{
+        font-size:2.4vw;
+        line-height: initial;
+    }
+    .notaLivro{
+        font-size: 2.4vw;
+        margin-left: 5vw;
+    }
+}
+
+@media(max-width: 425px){
+    .areaLivro{
+        margin-top: 4vh;
+        width: 80vw;
+    }
+    .fotoLivro{
+        height: 30vh;
+    }
+    .dadosLivro{
+        width: fit-content;
+        height: auto;
+        margin-top: 3vw;
+        margin-left: 0vw;
+        margin-bottom: 0vw;
+    }
+    .notaLivro{
+        margin-left: 2vw;
+        width: max-content;
+    }
+}
+@media(max-width: 320px){
+    .areaLivro{
+        margin-left: 3vw;
+        line-height: normal;
+    }
+    .fotoLivro{
+        height: 25vh;
+        margin-top: 4vh;
+    }
+    .tituloLivro{
+        font-size: 3.5vw;
+        height: min-content;
+        line-height: normal;
+    }
+    .autorLivro{
+        font-size: 3vw;
+    }
+    .notaLivro{
+        font-size: 3vw;
+        width: max-content;
+    }
+}
