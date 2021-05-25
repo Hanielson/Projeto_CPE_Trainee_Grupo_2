@@ -39,3 +39,16 @@
         margin-top: 0vh;
     }
 }
+@media(max-width: 538px){
+    .fotoUsuario{
+        width: 20vw;
+    }
+    .nomeUsuario{
+        font-size: 4vw;
+        padding-left: 0px;
+        line-height: normal;
+    }
+    .usuario{
+        margin-top: 0vh;
+    }
+}

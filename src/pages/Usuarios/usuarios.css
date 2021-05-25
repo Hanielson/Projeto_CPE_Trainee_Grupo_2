@@ -74,3 +74,44 @@
         padding-left: 0px;
     }
 }
+@media(max-width: 538px){
+    .pagUsuarios{
+        padding-top: 15vh;
+    }
+    .bordaTituloPag{
+        width: 80vw;
+        margin-left: 10vw;
+        height: 5vh;
+    }
+    .tituloPag{
+        font-size: 5vw;
+        margin-top: 3vw;
+        padding-left: 0px;
+    }
+    .areaUsuarios{
+        margin-top: 3vh;
+    }
+    .areaDeCima{
+        height: 30vh;
+    }
+    .areaDeBaixo{
+        height: 25vh;
+    }
+}
+@media(max-width: 425px){
+    .pagUsuarios{
+        padding-top: 20vh;
+    }
+    .tituloPag{
+        margin-top: 2.7vw;
+    }
+    .areaUsuarios{
+        margin-top: 5vh;
+    }
+    .areaDeCima{
+        height: 30vh;
+    }
+    .areaDeBaixo{
+        height: 23vh;
+    }
+}

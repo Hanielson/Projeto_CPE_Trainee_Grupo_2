@@ -10,9 +10,7 @@ function Footer() {
         
         {/*Logo que importada de um site, já que a ferramenta
         que uso não tem suporte gratuito para importar*/}
-        <div>
-          <img src="https://i.ibb.co/K5sBWhC/oie-nm4q-Dx-Tc-Xe-FN.png" className="logoFooter"/>
-        </div>
+        <img src="https://i.ibb.co/K5sBWhC/oie-nm4q-Dx-Tc-Xe-FN.png" className="logoFooter"/>
 
         {/*Links das outras páginas*/}
         <div className="navegue">
