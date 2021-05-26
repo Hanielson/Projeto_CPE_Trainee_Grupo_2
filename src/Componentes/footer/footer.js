@@ -5,9 +5,7 @@ import "./footer.css";
 
 function Footer() {
   return (
-    <div className="footer"> 
-      <div className="top-box">
-        
+    <div className="footer">         
         {/*Logo que importada de um site, já que a ferramenta
         que uso não tem suporte gratuito para importar*/}
         <img src="https://i.ibb.co/K5sBWhC/oie-nm4q-Dx-Tc-Xe-FN.png" className="logoFooter"/>
@@ -46,8 +44,6 @@ function Footer() {
             </div>
           </div>
         </div>
-
-      </div>
     </div>
   );
 }

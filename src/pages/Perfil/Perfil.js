@@ -23,9 +23,7 @@ export default function Perfil() {
             <Header />
             <div className={'perfil'}>
                 <div className={'areaPerfil'}>
-                    <div>
-                        <img className={'fotoPerfil'} src="https://i.ibb.co/wRH2DmY/woman-1284411-1920-1.png" />
-                    </div>
+                    <img className={'fotoPerfil'} src="https://i.ibb.co/wRH2DmY/woman-1284411-1920-1.png" />
                     <div className={'dadosPerfil'}>
                         <input
                             type={'text'}
@@ -122,7 +120,7 @@ export default function Perfil() {
                             </div>
                         }
                     </div>
-                    <div>
+                    <div className={'areaBotoes'}>
                         {
                             estaEmEdicao &&
                             <img

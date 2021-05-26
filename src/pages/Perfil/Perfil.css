@@ -6,9 +6,8 @@ body{
     display: grid;
     grid-area: 'perfil';
     margin-top: 19vh;
-    width: 100%;
+    width: 100vw;
     height: auto;
-    grid-template-rows: 1fr 1.5fr 1.5fr 1.5fr;
     grid-template-areas: 
         'areaPerfil'
         'lendo'
@@ -23,12 +22,14 @@ body{
     width: 100%;
     height: auto;
     margin-top: 5vh;
+    margin-bottom: 5vh;
     grid-template-areas: 'fotoPerfil dadosPerfil botaoEditar';
 }
 
 .areaBotoes{
     display: grid;
     width: 5vw;
+    height: min-content;
     grid-template-areas:
     'botaoSalvar'
     'botaoCancelar' ;
@@ -355,6 +356,7 @@ body{
 @media (max-width: 538px) {
         .perfil{
             margin-top: 14vh;
+            grid-template-rows: min-content;
         }
         .areaPerfil{
             height: max-content;
@@ -441,29 +443,137 @@ body{
         }
 }
 
-@media(max-width: 425px){
+@media(max-width: 538px){
     .perfil{
-        margin-top: 18vh;
+        margin-top: 12vh;
     }
     .areaPerfil{
-        margin-bottom: 10vh;
+        margin-bottom: 5vh;
+        grid-template-areas: none;
     }
     .fotoPerfil{
-        margin-left: 3vw;
+        margin-left: 0vw;
+        width: 40vw;
+        height: 40vw;
+        justify-self: center;
     }
     .dadosPerfil{
         margin-left: 0vw;
+        margin-top: 5vh;
+        width: 100vw;
+    }
+    .apelido{
+        font-size: 7vw;
+        margin-right: 0vw;
+        justify-self: center;
+        width: 40vw;
+        margin-bottom: 3vh;
     }
     .cidade{
-        font-size: 3vw;
+        font-size: 5vw;
+        width: fit-content;
+    }
+    .nomeCidade{
+        font-size: 4vw;
+    }
+    .rua{
+        font-size: 5vw;
+        width: fit-content;
+    }
+    .nomeRua{
+        font-size: 4vw;
+        width: 30vw;
+    }
+    .numero{
+        font-size: 5vw;
+        width: fit-content;
+    }
+    .numeroRua{
+        font-size: 4vw;
+        width: 10vw;
+    }
+    .pais{
+        font-size: 5vw;
+        width: fit-content;
+    }
+    .nomePais{
+        font-size: 4vw;
+        width: fit-content;
     }
     .generoFavorito{
-        font-size: 3vw;
+        font-size: 5vw;
+    }
+    .nomeGenero{
+        font-size: 4vw;
+        width: 40vw;
     }
     .fraseUsuario{
-        font-size: 3vw;
+        font-size: 5vw;
+        line-height: initial;
     }
     .frase{
-        font-size: 2.8vw;
+        font-size: 3.5vw;
+        width: 92vw;
+    }
+    .emailPerfil{
+        font-size: 5vw;
+        width: fit-content;
+    }
+    .emailUsuario{
+        font-size: 4vw;
+        width: fit-content;
+    }
+    .senhaPerfil{
+        font-size: 5vw;
+        width: fit-content;
+    }
+    .senhaUsuario{
+        font-size: 4vw;
+        width: fit-content;
+    }
+    .areaBotoes{
+        grid-template-areas: 'botaoSalvar botaoCancelar';
+        width: min-content;
+        justify-self: right;
+        margin-top: 1vh;
+        margin-right: 5vw
+    }
+    .botaoCancelar{
+        margin-top: 0vh;
+        margin-left: 2vw;
+        width: 4vw;
+    }
+    .botaoSalvar{
+        width: 4vw;
+    }
+    .botaoEditar{
+        width: 4vw;
+    }
+    .bordaTituloLendo{
+        margin: initial;
+        width: 50vw;
+        height: 5vh;
+    }
+    .bordaTituloTerminado{
+        margin: initial;
+        width: 50vw;
+        height: 5vh;
+    }
+    .bordaTituloParou{
+        margin: initial;
+        width: 50vw;
+        height: 5vh;
+    }
+    .tituloLendo{
+        font-size: 6vw;
+        padding-top: 2vh;
+    }
+    .tituloTerminado{
+        font-size: 5.5vw;
+        padding-top: 2vh;
+    }
+    .tituloParou{
+        font-size: 6vw;
+        padding-top: 2vh;
     }
 }

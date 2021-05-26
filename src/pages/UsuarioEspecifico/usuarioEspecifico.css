@@ -4,7 +4,6 @@
     margin-top: 19vh;
     width: 100%;
     height: auto;
-    grid-template-rows: 1fr 1.5fr 1.5fr 1.5fr;
     grid-template-areas: 
         'areaPerfil'
         'lendo'
@@ -30,4 +29,10 @@
     width: max-content;
     font-weight: normal;
     margin-left: 0.9vw;
+}
+
+@media(max-width: 560px){
+    .nomeCidadeUE{
+        font-size: 2.5vw;
+    }
 }
