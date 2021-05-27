@@ -44,9 +44,7 @@ export default function UsuarioEspecifico() {
         <div className={'usuarioEspecifico'}>
             <Header />
             <div className={'areaPerfil'}>
-                <div>
                     <img className={'fotoPerfil'} src={usuarioQueNosQueremos.foto} />
-                </div>
                 <div className={'dadosPerfil'}>
                     <p className={'apelido'}>{usuarioQueNosQueremos.nome}</p>
                     <div className={'dadosApelido'}>

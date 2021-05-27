@@ -32,7 +32,19 @@
 }
 
 @media(max-width: 560px){
+    .usuarioEspecifico{
+        margin-top: 12vh;
+    }
     .nomeCidadeUE{
-        font-size: 2.5vw;
+        font-size: 4.5vw;
+        margin-left: 4vw;
+    }
+    .nomeGeneroUE{
+        font-size: 4.5vw;
+        margin-left: 4vw;
+    }
+    .fraseUE{
+        font-size: 4vw;
+        width: 90vw;
     }
 }

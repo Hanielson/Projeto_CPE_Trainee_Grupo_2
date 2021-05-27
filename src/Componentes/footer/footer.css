@@ -152,7 +152,7 @@
 /* Responsividade */
 
 @media(max-width: 768px){
-  .top-box{
+  .footer{
     grid-template-columns: max-content;
   }
   .navegue{
@@ -161,7 +161,7 @@
 }
 
 @media (max-width: 540px) {
-  .top-box{
+  .footer{
     height: 20vh;
     align-items: initial;
   }

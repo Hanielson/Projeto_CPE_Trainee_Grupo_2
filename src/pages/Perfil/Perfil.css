@@ -460,12 +460,17 @@ body{
         margin-left: 0vw;
         margin-top: 5vh;
         width: 100vw;
+        justify-content: center;
+    }
+    .dadosApelido{
+        margin-top: 3vh;
     }
     .apelido{
         font-size: 7vw;
         margin-right: 0vw;
         justify-self: center;
-        width: 40vw;
+        text-align: center;
+        width: fit-content;
         margin-bottom: 3vh;
     }
     .cidade{
