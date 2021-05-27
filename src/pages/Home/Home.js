@@ -1,5 +1,4 @@
 import React from 'react'
-import Logo from '../../assets/logo.png'
 import './home.css'
 import Header from '../../Componentes/header/index'
 import Carousel from 'react-elastic-carousel'
@@ -7,7 +6,6 @@ import Footer from '../../Componentes/footer/index'
 import imagem1 from '../../assets/imagem1.png'
 import imagem2 from '../../assets/imagem2.png'
 import imagem3 from '../../assets/imagem3.png'
-import livro from '../../assets/livro.png'
 
 
 
@@ -66,15 +64,16 @@ export default function Home() {
                 </div>
 
                 <h1 id={'lancamento'} className={'titulo'}>Lançamentos</h1>
-                <Carousel itemsToShow={3}>
-                <img  id={'livro'} src={livro} alt={'livro'}/>
-                <img  id={'livro'} src={livro} alt={'livro'}/>
-                <img  id={'livro'} src={livro} alt={'livro'}/>
-                <img  id={'livro'} src={livro} alt={'livro'}/>
-                <img  id={'livro'} src={livro} alt={'livro'}/>
-                <img  id={'livro'} src={livro} alt={'livro'}/>
-                <img  id={'livro'} src={livro} alt={'livro'}/>
-                <img  id={'livro'} src={livro} alt={'livro'}/>
+                <Carousel itemsToShow={4}>
+                <img  id={'livro'} src= "https://i.ibb.co/hRqZg7B/image-4.png" alt={'livro'}/>
+                <img  id={'livro'} src= "https://i.ibb.co/MMw89Cp/image-6.png" alt={'livro'}/>
+                <img  id={'livro'} src= "https://i.ibb.co/d2hsjB2/image-7.png" alt={'livro'}/>
+                <img  id={'livro'} 
+                src= "https://imgbb.online/images/2021/05/23/livro-vermelho_andrew-lang_CAPA_FINAL_CURVAS-0190c3b96dc53af61c.jpg" alt={'livro'}/>
+                <img  id={'livro'} 
+                src="https://imgbb.online/images/2021/05/23/d816c439000eea434f997ff7cedebc420eb43a10be903d1e.jpg" alt={'livro'}/>
+                <img  id={'livro'} src= "https://imgbb.online/images/2021/05/23/livro-verde_andrew-lang_CAPA-01a2d782d2a09c63f4.jpg" alt={'livro'}/>
+                <img  id={'livro'} src= "https://imgbb.online/images/2021/05/23/197-dracula-de-bram-stoker-first-edition--2f61a6e15fd0e6d7d.jpg" alt={'livro'}/>
                 </Carousel>
                 
             </article>

@@ -6,7 +6,6 @@ body{
     display: grid;
     grid-area: 'perfil';
     margin-top: 19vh;
-    width: 100vw;
     height: auto;
     grid-template-areas: 
         'areaPerfil'
