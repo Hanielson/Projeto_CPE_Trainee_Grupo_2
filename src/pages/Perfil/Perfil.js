@@ -123,11 +123,19 @@ export default function Perfil() {
                     <div className={'areaBotoes'}>
                         {
                             estaEmEdicao &&
-                            <img
-                                className={'botaoEditar'}
-                                onClick={() => setEstaEmEdicao(false)}
-                                src="https://i.ibb.co/LZRhG54/image-9.png"
-                            />
+                            <div className={'areaBotoes'}>
+                                <img
+                                    className={'botaoEditar'}
+                                    onClick={() => setEstaEmEdicao(false)}
+                                    src="https://i.ibb.co/LZRhG54/image-9.png"
+                                />
+                                <a href={'/login'}>
+                                    <img
+                                        className={'botaoSair'}
+                                        src="https://i.ibb.co/sCCxB2R/oie-Ur7k-Wp-TYBp-ZX.jpg"
+                                    />
+                                </a>
+                            </div>
                         }
                         {
                             !estaEmEdicao &&
