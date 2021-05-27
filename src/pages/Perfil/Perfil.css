@@ -1,594 +1,604 @@
-body{
-    background-color: #ECEEED;
+body {
+  background-color: #eceeed;
 }
 
-.perfil{
-    display: grid;
-    grid-area: 'perfil';
-    margin-top: 19vh;
-    height: auto;
-    grid-template-areas: 
-        'areaPerfil'
-        'lendo'
-        'terminado'
-        'parou';
+.perfil {
+  display: grid;
+  grid-area: "perfil";
+  margin-top: 19vh;
+  height: auto;
+  grid-template-areas:
+    "areaPerfil"
+    "lendo"
+    "terminado"
+    "parou";
 }
 
-.areaPerfil{
-    display: grid;
-    grid-area: areaPerfil;
-    background-color: #ECEEED;
-    width: 100%;
-    height: auto;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    grid-template-areas: 'fotoPerfil dadosPerfil botaoEditar';
+.areaPerfil {
+  display: grid;
+  grid-area: areaPerfil;
+  background-color: #eceeed;
+  width: 100%;
+  height: auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  grid-template-areas: "fotoPerfil dadosPerfil botaoEditar";
 }
 
-.areaBotoes{
-    display: grid;
-    width: 5vw;
-    height: min-content;
-    grid-template-areas:
-    'botaoSalvar'
-    'botaoCancelar' ;
+.areaBotoes {
+  display: grid;
+  width: 5vw;
+  height: min-content;
+  grid-template-areas:
+    "botaoSalvar"
+    "botaoCancelar";
 }
 
 .fotoPerfil {
-    background-color: thistle;
-    width: 14vw;
-    border: 1px solid black;
-    height: 14vw;
-    margin-left: 5vw;
-    border-radius: 50%;
+  background-color: thistle;
+  width: 14vw;
+  border: 1px solid black;
+  height: 14vw;
+  margin-left: 5vw;
+  border-radius: 50%;
 }
 
 .apelido {
-    font-size: 2.5vw;
-    justify-content: left;
-    background-color: #ECEEED;
-    margin-right: 5vw;
-    width: max-content;
-    border: none;
-    color: #58595B;
-    font-weight: bolder;
-    padding-left: 1vw;
+  font-size: 2.5vw;
+  justify-content: left;
+  background-color: #eceeed;
+  margin-right: 5vw;
+  width: max-content;
+  border: none;
+  color: #58595b;
+  font-weight: bolder;
+  padding-left: 1vw;
 }
 
-.dadosPerfil{
-    display: grid;
-    align-items: center;
-    width: 50vw;
-    justify-content: left;
-    grid-template-areas: 
-    'apelido'
-    'restoDoEndereco'
-    'dadosApelido';
+.dadosPerfil {
+  display: grid;
+  align-items: center;
+  width: 50vw;
+  justify-content: left;
+  grid-template-areas:
+    "apelido"
+    "restoDoEndereco"
+    "dadosApelido";
 }
 
-.dadosApelido{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 'cidade generoFavorito';
+.dadosApelido {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "cidade generoFavorito";
 }
 
-.restoDoEndereco{
-    display: grid;
-    grid-template-areas: 
-    'rua numero';
-    margin-top: 5vh;
+.restoDoEndereco {
+  display: grid;
+  grid-template-areas: "rua numero";
+  margin-top: 5vh;
 }
 
-.rua{
-    font-size: 1.4vw;
+.rua {
+  font-size: 1.4vw;
 }
 
-.nomeRua{
-    border: none;
-    background-color: #ECEEED;
-    width: min-content;
-    height: min-content;
-    font-size: 1.3vw;
-    font-weight: normal;
-    margin-left: 0.9vw;
+.nomeRua {
+  border: none;
+  background-color: #eceeed;
+  width: min-content;
+  height: min-content;
+  font-size: 1.3vw;
+  font-weight: normal;
+  margin-left: 0.9vw;
 }
 
-.numero{
-    font-size: 1.4vw; 
+.numero {
+  font-size: 1.4vw;
 }
 
-.numeroRua{
-    border: none;
-    background-color: #ECEEED;
-    width: min-content;
-    height: min-content;
-    font-size: 1.3vw;
-    font-weight: normal;
-    margin-left: 0.9vw;
+.numeroRua {
+  border: none;
+  background-color: #eceeed;
+  width: min-content;
+  height: min-content;
+  font-size: 1.3vw;
+  font-weight: normal;
+  margin-left: 0.9vw;
 }
 
-.pais{
-    font-size: 1.4vw;
+.pais {
+  font-size: 1.4vw;
 }
 
-.nomePais{
-    border: none;
-    width: min-content;
-    background-color: #ECEEED;
-    height: min-content;
-    font-size: 1.3vw;
-    font-weight: normal;
-    margin-left: 0.9vw;
+.nomePais {
+  border: none;
+  width: min-content;
+  background-color: #eceeed;
+  height: min-content;
+  font-size: 1.3vw;
+  font-weight: normal;
+  margin-left: 0.9vw;
 }
 
-.emailPerfil{
-    font-size: 1.4vw;
+.emailPerfil {
+  font-size: 1.4vw;
 }
 
-.emailUsuario{
-    border: none;
-    height: min-content;
-    background-color: #ECEEED;
-    font-size: 1.3vw;
-    font-weight: normal;
-    margin-left: 0.9vw;
+.emailUsuario {
+  border: none;
+  height: min-content;
+  background-color: #eceeed;
+  font-size: 1.3vw;
+  font-weight: normal;
+  margin-left: 0.9vw;
 }
 
-.senhaPerfil{
-    font-size: 1.4vw;
+.senhaPerfil {
+  font-size: 1.4vw;
 }
 
-.senhaUsuario{
-    border: none;
-    width: min-content;
-    background-color: #ECEEED;
-    height: min-content;
-    font-size: 1.3vw;
-    font-weight: normal;
-    margin-left: 0.9vw;
+.senhaUsuario {
+  border: none;
+  width: min-content;
+  background-color: #eceeed;
+  height: min-content;
+  font-size: 1.3vw;
+  font-weight: normal;
+  margin-left: 0.9vw;
 }
 
 .cidade {
-    font-size: 1.4vw;
-    font-weight: bolder;
+  font-size: 1.4vw;
+  font-weight: bolder;
 }
 
 .nomeCidade {
-    font-size: 1.3vw;
-    margin-left: 0.9vw;
-    height: min-content;
-    background-color: #ECEEED;
-    width: min-content;
-    font-weight: normal;
-    border: none;    
+  font-size: 1.3vw;
+  margin-left: 0.9vw;
+  height: min-content;
+  background-color: #eceeed;
+  width: min-content;
+  font-weight: normal;
+  border: none;
 }
 
 .generoFavorito {
-    font-size: 1.4vw;
-    font-weight: bolder;
-    width: max-content;
-    height: min-content;
+  font-size: 1.4vw;
+  font-weight: bolder;
+  width: max-content;
+  height: min-content;
 }
 
 .nomeGenero {
-    margin-left: 0.5vw;
-    height: min-content;
-    background-color: #ECEEED;
-    font-weight: normal;
-    border: none;
-    width: max-content;
-    font-size: 1.3vw;
+  margin-left: 0.5vw;
+  height: min-content;
+  background-color: #eceeed;
+  font-weight: normal;
+  border: none;
+  width: max-content;
+  font-size: 1.3vw;
 }
 
 .fraseUsuario {
-    font-size: 1.4vw;
-    font-weight: bolder;
-    width: max-content;
+  font-size: 1.4vw;
+  font-weight: bolder;
+  width: max-content;
 }
 
 .frase {
-    font-size: 1.3vw;
-    margin-left: 0.9vw;
-    background-color: #ECEEED;
-    height: min-content;
-    margin: none;
-    font-weight: normal;
-    border: none;    
+  font-size: 1.3vw;
+  margin-left: 0.9vw;
+  background-color: #eceeed;
+  height: min-content;
+  margin: none;
+  font-weight: normal;
+  border: none;
 }
 
 .botaoEditar {
-    justify-content: right;
-    width: 1.5vw;
-    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25), inset 0px 3px 3px rgba(0, 0, 0, 0.25);
-    cursor:pointer;
+  justify-content: right;
+  width: 1.5vw;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25),
+    inset 0px 3px 3px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 
 .botaoSalvar {
-    justify-content: right;
-    width: 1.5vw;
-    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25), inset 0px 3px 3px rgba(0, 0, 0, 0.25);
-    cursor:pointer;
+  justify-content: right;
+  width: 1.5vw;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25),
+    inset 0px 3px 3px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 
 .botaoCancelar {
-    justify-content: right;
-    align-content: end;
-    width: 1.5vw;
-    margin-top: 1vh;
-    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25), inset 0px 3px 3px rgba(0, 0, 0, 0.25);
-    cursor:pointer;
+  justify-content: right;
+  align-content: end;
+  width: 1.5vw;
+  margin-top: 1vh;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25),
+    inset 0px 3px 3px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 
 .botaoEditar:active {
-    box-shadow: none;
-    position: relative;
-    top: 3px;
-}
-.botaoSair{
-    width: 1.5vw;
-    margin-top: 2vh;
-    cursor: pointer;
-    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25), inset 0px 3px 3px rgba(0, 0, 0, 0.25);
-}
-.botaoSair:active {
-    box-shadow: none;
-    position: relative;
-    top: 3px;
+  box-shadow: none;
+  position: relative;
+  top: 3px;
 }
 
-.lendo{
-    background-color: #A2A3A6;
-    width: 100%;
+.botaoSair {
+  width: 1.5vw;
+  margin-top: 2vh;
+  cursor: pointer;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25),
+    inset 0px 3px 3px rgba(0, 0, 0, 0.25);
+}
+
+.botaoSair:active {
+  box-shadow: none;
+  position: relative;
+  top: 3px;
+}
+
+.lendo {
+  background-color: #a2a3a6;
+  width: 100%;
 }
 
 .bordaTituloLendo {
-    background-color: #CCB0A5;
-    width: 25vw;
-    height: 6vh;
+  background-color: #ccb0a5;
+  width: 25vw;
+  height: 6vh;
 
-    border-bottom-right-radius: 30px;
-    border-top-right-radius: 30px;
-    margin-bottom: 7vh;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  margin-bottom: 7vh;
 }
 
 .tituloLendo {
-    font-size: 2vw;
-    margin-left: 7vw;
-    padding-top: 0.6vh;
+  font-size: 2vw;
+  margin-left: 7vw;
+  padding-top: 0.6vh;
 }
 
-.terminado{
-    width: 100%;
-    background-color: #ECEEED;
+.terminado {
+  width: 100%;
+  background-color: #eceeed;
 }
 
 .bordaTituloTerminado {
-    background-color: #58595B;
-    width: 25vw;
-    height: 6vh;
-    border-bottom-right-radius: 30px;
-    border-top-right-radius: 30px;
-    margin-bottom: 7vh;
+  background-color: #58595b;
+  width: 25vw;
+  height: 6vh;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  margin-bottom: 7vh;
 }
 
-.tituloTerminado{
-    color: #ECEEED;
-    font-size: 2vw;
-    margin-left: 5vw;
-    padding-top: 0.6vh;
+.tituloTerminado {
+  color: #eceeed;
+  font-size: 2vw;
+  margin-left: 5vw;
+  padding-top: 0.6vh;
 }
 
-.parou{
-    background-color:#CCB0A5;
-    margin-bottom: 5vh;
-    width: 100%;
+.parou {
+  background-color: #ccb0a5;
+  margin-bottom: 5vh;
+  width: 100%;
 }
 
 .bordaTituloParou {
-    background-color: #A2A3A6;
-    width: 25vw;
-    height: 6vh;
-    border-bottom-right-radius: 30px;
-    border-top-right-radius: 30px;
-    margin-bottom: 7vh;
+  background-color: #a2a3a6;
+  width: 25vw;
+  height: 6vh;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  margin-bottom: 7vh;
 }
 
 .tituloParou {
-    font-size: 2vw;
-    margin-left: 7vw;
-    padding-top: 0.6vh;
+  font-size: 2vw;
+  margin-left: 7vw;
+  padding-top: 0.6vh;
 }
 
-@media(max-width: 768px){
-    .fotoPerfil{
-        margin-top: 5vh;
-        width: 20vw;
-        height: 20vw;
-    }
-    .restoDoEndereco{
-        margin-top: 1vh;
-    }
-    .apelido{
-        font-size: 4vw;
-        margin-left: 1vw;
-    }
-    .rua{
-        font-size: 2vw;
-    }
-    .nomeRua{
-        font-size: 1.6vw;
-    }
-    .numero{
-        font-size: 2vw;
-    }
-    .numeroRua{
-        font-size: 1.6vw;
-    }
-    .cidade{
-        font-size: 2vw;
-    }
-    .nomeCidade{
-        font-size: 1.8vw;
-    }
-    .pais{
-        font-size: 2vw;
-    }
-    .nomePais{
-        font-size: 1.8vw;
-    }
-    .generoFavorito{
-        font-size: 2vw;
-    }
-    .nomeGenero{
-        font-size: 1.8vw;
-    }
-    .fraseUsuario{
-        font-size: 1.8vw;
-    }
-    .frase{
-        font-size: 1.6vw;
-        width: 43vw;
-    }
-    .emailPerfil{
-        font-size: 2vw;
-    }
-    .emailUsuario{
-        font-size: 1.8vw;
-    }
-    .senhaPerfil{
-        font-size: 2vw;
-    }
-    .senhaUsuario{
-        font-size: 1.8vw;
-    }
+@media (max-width: 768px) {
+  .fotoPerfil {
+    margin-top: 5vh;
+    width: 20vw;
+    height: 20vw;
+  }
+  .restoDoEndereco {
+    margin-top: 1vh;
+  }
+  .apelido {
+    font-size: 4vw;
+    margin-left: 1vw;
+  }
+  .rua {
+    font-size: 2vw;
+  }
+  .nomeRua {
+    font-size: 1.6vw;
+  }
+  .numero {
+    font-size: 2vw;
+  }
+  .numeroRua {
+    font-size: 1.6vw;
+  }
+  .cidade {
+    font-size: 2vw;
+  }
+  .nomeCidade {
+    font-size: 1.8vw;
+  }
+  .pais {
+    font-size: 2vw;
+  }
+  .nomePais {
+    font-size: 1.8vw;
+  }
+  .generoFavorito {
+    font-size: 2vw;
+  }
+  .nomeGenero {
+    font-size: 1.8vw;
+  }
+  .fraseUsuario {
+    font-size: 1.8vw;
+  }
+  .frase {
+    font-size: 1.6vw;
+    width: 43vw;
+  }
+  .emailPerfil {
+    font-size: 2vw;
+  }
+  .emailUsuario {
+    font-size: 1.8vw;
+  }
+  .senhaPerfil {
+    font-size: 2vw;
+  }
+  .senhaUsuario {
+    font-size: 1.8vw;
+  }
 }
 
 @media (max-width: 538px) {
-        .perfil{
-            margin-top: 14vh;
-            grid-template-rows: min-content;
-        }
-        .areaPerfil{
-            height: max-content;
-        }
-        .fotoPerfil{
-            height: 25vw;
-            width: 25vw;
-            margin-top: 5vh;
-        }
-        .dadosPerfil{
-            margin-left: 5vw;
-            width: max-content;
-        }
-        .dadosApelido{
-            display: flex;
-            flex-direction: column;
-        }
-        .apelido{
-            font-size: 4.4vw;
-        }
-        .cidade{
-            font-size: 2.5vw;
-        }
-        .nomeCidade{
-            font-size: 2.5vw;
-            width: min-content;
-        }
-        .generoFavorito{
-            border: none;
-            margin: none;
-            font-size: 2.2vw;
-            /* padding-left: 0vw; */
-        }
-        .nomeGenero{
-            font-size: 2.5vw;
-            width: min-content;
-        }
-        .fraseUsuario{
-            font-size: 2.2vw;
-            width: max-content;
-            flex-direction: column;
-            align-self: left;
-        }
-        .frase{
-            font-size: 2vw;
-            width: 40vw;
-            margin: initial;
-        }
-        .botaoEditar{
-            width: 3vw;
-        }
-        .botaoCancelar{
-            width: 3vw;
-        }
-        .botaoSalvar{
-            width: 3vw;
-        }
-        .bordaTituloLendo{
-            margin: initial;
-            width: 40vw;
-            height: 5vh;
-        }
-        .bordaTituloTerminado{
-            margin: initial;
-            width: 40vw;
-            height: 5vh;
-        }
-        .bordaTituloParou{
-            margin: initial;
-            width: 40vw;
-            height: 5vh;
-        }
-        .tituloLendo{
-            font-size: 4vw;
-            padding-top: 1.4vh;
-        }
-        .tituloTerminado{
-            font-size: 4vw;
-            padding-top: 1.4vh;
-        }
-        .tituloParou{
-            font-size: 4vw;
-            padding-top: 1.4vh;
-        }
+  .perfil {
+    margin-top: 14vh;
+    grid-template-rows: min-content;
+  }
+  .areaPerfil {
+    height: max-content;
+  }
+  .fotoPerfil {
+    height: 25vw;
+    width: 25vw;
+    margin-top: 5vh;
+  }
+  .dadosPerfil {
+    margin-left: 5vw;
+    width: max-content;
+  }
+  .dadosApelido {
+    display: flex;
+    flex-direction: column;
+  }
+  .apelido {
+    font-size: 4.4vw;
+  }
+  .cidade {
+    font-size: 2.5vw;
+  }
+  .nomeCidade {
+    font-size: 2.5vw;
+    width: min-content;
+  }
+  .generoFavorito {
+    border: none;
+    margin: none;
+    font-size: 2.2vw;
+    /* padding-left: 0vw; */
+  }
+  .nomeGenero {
+    font-size: 2.5vw;
+    width: min-content;
+  }
+  .fraseUsuario {
+    font-size: 2.2vw;
+    width: max-content;
+    flex-direction: column;
+    align-self: left;
+  }
+  .frase {
+    font-size: 2vw;
+    width: 40vw;
+    margin: initial;
+  }
+  .botaoEditar {
+    width: 3vw;
+  }
+  .botaoCancelar {
+    width: 3vw;
+  }
+  .botaoSalvar {
+    width: 3vw;
+  }
+  .bordaTituloLendo {
+    margin: initial;
+    width: 40vw;
+    height: 5vh;
+  }
+  .bordaTituloTerminado {
+    margin: initial;
+    width: 40vw;
+    height: 5vh;
+  }
+  .bordaTituloParou {
+    margin: initial;
+    width: 40vw;
+    height: 5vh;
+  }
+  .tituloLendo {
+    font-size: 4vw;
+    padding-top: 1.4vh;
+  }
+  .tituloTerminado {
+    font-size: 4vw;
+    padding-top: 1.4vh;
+  }
+  .tituloParou {
+    font-size: 4vw;
+    padding-top: 1.4vh;
+  }
 }
 
-@media(max-width: 538px){
-    .perfil{
-        margin-top: 12vh;
-    }
-    .areaPerfil{
-        margin-bottom: 5vh;
-        grid-template-areas: none;
-    }
-    .fotoPerfil{
-        margin-left: 0vw;
-        width: 40vw;
-        height: 40vw;
-        justify-self: center;
-    }
-    .dadosPerfil{
-        margin-left: 0vw;
-        margin-top: 5vh;
-        width: 100vw;
-        justify-content: center;
-    }
-    .dadosApelido{
-        margin-top: 3vh;
-    }
-    .apelido{
-        font-size: 7vw;
-        margin-right: 0vw;
-        justify-self: center;
-        text-align: center;
-        width: fit-content;
-        margin-bottom: 3vh;
-    }
-    .cidade{
-        font-size: 5vw;
-        width: fit-content;
-    }
-    .nomeCidade{
-        font-size: 4vw;
-    }
-    .rua{
-        font-size: 5vw;
-        width: fit-content;
-    }
-    .nomeRua{
-        font-size: 4vw;
-        width: 30vw;
-    }
-    .numero{
-        font-size: 5vw;
-        width: fit-content;
-    }
-    .numeroRua{
-        font-size: 4vw;
-        width: 10vw;
-    }
-    .pais{
-        font-size: 5vw;
-        width: fit-content;
-    }
-    .nomePais{
-        font-size: 4vw;
-        width: fit-content;
-    }
-    .generoFavorito{
-        font-size: 5vw;
-    }
-    .nomeGenero{
-        font-size: 4vw;
-        width: 40vw;
-    }
-    .fraseUsuario{
-        font-size: 5vw;
-        line-height: initial;
-    }
-    .frase{
-        font-size: 3.5vw;
-        width: 92vw;
-    }
-    .emailPerfil{
-        font-size: 5vw;
-        width: fit-content;
-    }
-    .emailUsuario{
-        font-size: 4vw;
-        width: fit-content;
-    }
-    .senhaPerfil{
-        font-size: 5vw;
-        width: fit-content;
-    }
-    .senhaUsuario{
-        font-size: 4vw;
-        width: fit-content;
-    }
-    .areaBotoes{
-        grid-template-areas: 'botaoSalvar botaoCancelar';
-        width: min-content;
-        justify-self: right;
-        margin-top: 1vh;
-        margin-right: 5vw
-    }
-    .botaoCancelar{
-        margin-top: 0vh;
-        margin-left: 2vw;
-        width: 4vw;
-    }
-    .botaoSalvar{
-        width: 4vw;
-    }
-    .botaoEditar{
-        width: 4vw;
-    }
-    .bordaTituloLendo{
-        margin: initial;
-        width: 50vw;
-        height: 5vh;
-    }
-    .bordaTituloTerminado{
-        margin: initial;
-        width: 50vw;
-        height: 5vh;
-    }
-    .bordaTituloParou{
-        margin: initial;
-        width: 50vw;
-        height: 5vh;
-    }
-    .tituloLendo{
-        font-size: 6vw;
-        padding-top: 2vh;
-    }
-    .tituloTerminado{
-        font-size: 5.5vw;
-        padding-top: 2vh;
-    }
-    .tituloParou{
-        font-size: 6vw;
-        padding-top: 2vh;
-    }
+@media (max-width: 538px) {
+  .perfil {
+    margin-top: 12vh;
+  }
+  .areaPerfil {
+    margin-bottom: 5vh;
+    grid-template-areas: none;
+  }
+  .fotoPerfil {
+    margin-left: 0vw;
+    width: 40vw;
+    height: 40vw;
+    justify-self: center;
+  }
+  .dadosPerfil {
+    margin-left: 0vw;
+    margin-top: 5vh;
+    width: 100vw;
+    justify-content: center;
+  }
+  .dadosApelido {
+    margin-top: 3vh;
+  }
+  .apelido {
+    font-size: 7vw;
+    margin-right: 0vw;
+    justify-self: center;
+    text-align: center;
+    width: fit-content;
+    margin-bottom: 3vh;
+  }
+  .cidade {
+    font-size: 5vw;
+    width: fit-content;
+  }
+  .nomeCidade {
+    font-size: 4vw;
+  }
+  .rua {
+    font-size: 5vw;
+    width: fit-content;
+  }
+  .nomeRua {
+    font-size: 4vw;
+    width: 30vw;
+  }
+  .numero {
+    font-size: 5vw;
+    width: fit-content;
+  }
+  .numeroRua {
+    font-size: 4vw;
+    width: 10vw;
+  }
+  .pais {
+    font-size: 5vw;
+    width: fit-content;
+  }
+  .nomePais {
+    font-size: 4vw;
+    width: fit-content;
+  }
+  .generoFavorito {
+    font-size: 5vw;
+  }
+  .nomeGenero {
+    font-size: 4vw;
+    width: 40vw;
+  }
+  .fraseUsuario {
+    font-size: 5vw;
+    line-height: initial;
+  }
+  .frase {
+    font-size: 3.5vw;
+    width: 92vw;
+  }
+  .emailPerfil {
+    font-size: 5vw;
+    width: fit-content;
+  }
+  .emailUsuario {
+    font-size: 4vw;
+    width: fit-content;
+  }
+  .senhaPerfil {
+    font-size: 5vw;
+    width: fit-content;
+  }
+  .senhaUsuario {
+    font-size: 4vw;
+    width: fit-content;
+  }
+  .areaBotoes {
+    grid-template-areas: "botaoSalvar botaoCancelar";
+    width: min-content;
+    justify-self: right;
+    margin-top: 1vh;
+    margin-right: 3vw;
+  }
+  .botaoCancelar {
+    margin-top: 0vh;
+    margin-left: 3vw;
+    width: 5vw;
+  }
+  .botaoSalvar {
+    width: 5vw;
+  }
+  .botaoEditar {
+    width: 4vw;
+  }
+  .botaoSair {
+    width: 4vw;
+    margin-top: 0vh;
+    margin-left: 3vw;
+  }
+  .bordaTituloLendo {
+    margin: initial;
+    width: 50vw;
+    height: 5vh;
+  }
+  .bordaTituloTerminado {
+    margin: initial;
+    width: 50vw;
+    height: 5vh;
+  }
+  .bordaTituloParou {
+    margin: initial;
+    width: 50vw;
+    height: 5vh;
+  }
+  .tituloLendo {
+    font-size: 6vw;
+    padding-top: 2vh;
+  }
+  .tituloTerminado {
+    font-size: 5.5vw;
+    padding-top: 2vh;
+  }
+  .tituloParou {
+    font-size: 6vw;
+    padding-top: 2vh;
+  }
 }
