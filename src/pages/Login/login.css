@@ -1,202 +1,206 @@
 body {
-    background-color: #ECEEED;
+  background-color: #eceeed;
 }
 
 .login {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10vh;
-    width: 100%;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-        'areaDaEsquerda areaDaDireita';
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "areaDaEsquerda areaDaDireita";
 }
 
 .areaDaEsquerda {
-    display: grid;
-    grid-area: areaDaEsquerda;
-    width: auto;
-    justify-content: center;
-    align-content: center;
-    row-gap: 4vh;
-    grid-template-areas:
-        'areaDosInputs'
-        'areaBotao';
-    
+  display: grid;
+  grid-area: areaDaEsquerda;
+  width: auto;
+  justify-content: center;
+  align-content: center;
+  row-gap: 4vh;
+  grid-template-areas:
+    "areaDosInputs"
+    "areaBotao";
 }
 .areaDosInputs {
-    display: grid;
-    grid-area: areaDosInputs;
-    justify-content: center;
-    align-content: center;
-    row-gap: 4vh;
-    grid-template-areas:
-        'inputEmail'
-        'inputSenha';
-
+  display: grid;
+  grid-area: areaDosInputs;
+  justify-content: center;
+  align-content: center;
+  row-gap: 4vh;
+  grid-template-areas:
+    "inputEmail"
+    "inputSenha";
 }
 
 .areaBotao {
-    display: grid;
-    align-items: center;
-    grid-area: areaBotao;
-    grid-template-areas: 'botaoSubmit semLogin';
+  display: grid;
+  align-items: center;
+  grid-area: areaBotao;
+  grid-template-areas: "botaoSubmit semLogin";
 }
 
 .cadastreSe {
-    color: #CCB0A5;
-    cursor: pointer;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 0.9vw;
+  color: #ccb0a5;
+  cursor: pointer;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9vw;
+}
+
+.cadastreSe:hover {
+  color: rgb(151, 128, 118);
 }
 
 .cadastreSe:active {
-    position: relative;
-    top: 2px;
-    text-shadow: none;
+  position: relative;
+  top: 2px;
+  text-shadow: none;
 }
 
 input {
-    border: 1px solid black;
-    border-radius: 80px;
-    width: 35vw;
-    height: 5vh;
+  border: 1px solid black;
+  border-radius: 80px;
+  width: 35vw;
+  height: 5vh;
 }
 
-textarea:focus, input:focus, select:focus {
-    box-shadow: 0 0 0 0;
-    outline: 0;
-} 
+textarea:focus,
+input:focus,
+select:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
 
 .botaoSubmit {
-    background-color: #CCB0A5;
-    cursor:pointer;
-    border: none;
-    text-decoration: none;
-    border-radius: 80px;
-    width: 8vw;
-    height: 5.5vh;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-    display: grid;
-    grid-area: botaoSubmit;
-    justify-content: center;
-    align-items: center;
-    font-family: "Montserrat", sans-serif;
-    color: #58595B;
-    font-size: 1.5vw;
-    font-weight:bold;    
+  background-color: #ccb0a5;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  border-radius: 80px;
+  width: 8vw;
+  height: 5.5vh;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: grid;
+  grid-area: botaoSubmit;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  color: #58595b;
+  font-size: 1.5vw;
+  font-weight: bold;
 }
 
 .inputEmail {
-    display: grid;
-    grid-area: inputEmail;
+  display: grid;
+  grid-area: inputEmail;
 }
 
 .inputSenha {
-    display: grid;
-    grid-area: inputSenha;
+  display: grid;
+  grid-area: inputSenha;
 }
 
 .botaoSubmit:active {
-    position: relative;
-    top: 5px;
-    box-shadow: none;
+  position: relative;
+  top: 5px;
+  box-shadow: none;
 }
 
 .semLogin {
-    display: grid;
-    grid-area: semLogin;
-    font-family: "Montserrat", sans-serif;  
-    justify-content: center;
-    color: #58595B;
-    font-size: 1.1vw;
-    font-weight: 700;
+  display: grid;
+  grid-area: semLogin;
+  font-family: "Montserrat", sans-serif;
+  justify-content: center;
+  color: #58595b;
+  font-size: 1.1vw;
+  font-weight: 700;
 }
 
 .logo {
-    display: grid;
-    align-content: center;
-    height: auto;
-    width: 35vw;
-} 
+  display: grid;
+  align-content: center;
+  height: auto;
+  width: 35vw;
+}
 
 .areaDaDireita {
-    border-left: solid #58595B 0.2vw;
-    height: 55vh;
-    margin-top: 4vh;
+  border-left: solid #58595b 0.2vw;
+  height: 55vh;
+  margin-top: 4vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-area: areaDaDireita;
+  grid-template-areas: "logo";
+}
+
+@media (max-width: 540px) {
+  .login {
+    justify-items: center;
+    align-items: normal;
+    width: 100%;
+    height: 90vh;
+    grid-template-columns: none;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas:
+      "areaDaDireita"
+      "areaDaEsquerda";
+  }
+
+  .areaDaDireita {
+    border: none;
+    height: 25vh;
+    margin-top: 15vh;
     display: grid;
     justify-content: center;
     align-content: center;
     grid-area: areaDaDireita;
-    grid-template-areas:'logo';
-}
+    grid-template-areas: "logo";
+  }
 
-@media (max-width: 540px) {
-    .login{
-        justify-items: center;
-        align-items: normal;
-        width: 100%;
-        height: 90vh;
-        grid-template-columns: none;
-        grid-template-rows: 1fr 2fr;
-        grid-template-areas:
-            'areaDaDireita'
-            'areaDaEsquerda';    
-    }
+  .areaDaEsquerda {
+    display: grid;
+    grid-area: areaDaEsquerda;
+    width: 70vw;
+    justify-items: center;
+    border-top: solid #58595b 2px;
+    align-content: start;
+    padding-top: 5vh;
+    grid-row-gap: 1vh;
+    row-gap: 4vh;
+    grid-template-areas:
+      "areaDosInputs"
+      "areaBotao";
+  }
 
-    .areaDaDireita {
-        border: none;
-        height: 25vh;
-        margin-top: 15vh;
-        display: grid;
-        justify-content: center;
-        align-content: center;
-        grid-area: areaDaDireita;
-        grid-template-areas: 'logo';
-    }
+  input {
+    border: 1px solid #58595b;
+    border-radius: 80px;
+    width: 68vw;
+    height: 3.5vh;
+  }
 
-    .areaDaEsquerda {
-        display: grid;
-        grid-area: areaDaEsquerda;
-        width: 70vw;
-        justify-items: center;
-        border-top: solid #58595B 2px ;
-        align-content: start;
-        padding-top: 5vh;
-        grid-row-gap: 1vh;
-        row-gap: 4vh;
-        grid-template-areas:
-            'areaDosInputs'
-            'areaBotao';
-    }
+  .botaoSubmit {
+    width: 16vw;
+    height: 4vh;
+    font-size: 3vw;
+  }
 
-    input {
-        border: 1px solid #58595b ;
-        border-radius: 80px;
-        width: 68vw;
-        height: 3.5vh;
-    }
-    
-    .botaoSubmit {
-        width: 16vw;
-        height: 4vh;
-        font-size: 3vw;
-    }
+  .logo {
+    width: 65vw;
+  }
 
-    .logo {
-        width: 65vw;
-    }
-    
-    .semLogin{
-        margin-left: 30vw;
-        font-size: 3vw;
-        justify-items: right;
-    }
-    .cadastreSe {
-        font-size: 2.8vw;
-    }
+  .semLogin {
+    margin-left: 30vw;
+    font-size: 3vw;
+    justify-items: right;
+  }
+  .cadastreSe {
+    font-size: 2.8vw;
+  }
 }

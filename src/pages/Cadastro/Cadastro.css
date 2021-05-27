@@ -1,383 +1,251 @@
-﻿.paginaCadastro {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  left: 0;
-  right: 0;
-  width: 100%;
-}
-
-.cadastro {
-  /* Dispor os elemntos em linha */
-  display: flex;
-  flex-direction: row;
+﻿.cadastro {
+  display: grid;
+  grid-template-columns: 49.5% 1% 49.5%;
+  margin-top: 5vh;
+  margin-bottom: 8vh;
+  padding-left: 4vw;
   justify-content: center;
-  align-items: center;
-  /* Ajustar os itens na tela */
-  width: 100%;
-  margin: 0 auto;
-  margin-top: 100px;
+  font-family: "Montserrat", sans-serif;
+  height: auto;
+  font-size: 1.5vw;
+}
 
-  /* Configurações gerais da fonte */
-  font-size: 20px; /* padrão */
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bolder;
-  line-height: 0px;
-  color: #58595b;
+.botoes_inputs {
+  margin-top: 105px;
+}
+.apelidoRuaNumero > div {
+  display: grid;
+  grid-template-columns: 22vw 22vw;
+}
 
-  /* "Cobrir a tela" */
-  left: 0;
-  right: 0;
-  background-color: #eceeed;
-}
-/* O > para acessar cada div */
-.botoes_inputs > div {
-  /* Dispor elementos em linha */
-  display: flex;
-  flex-direction: row;
-}
-/* Posições dos input e textos */
-.inputNomeSobrenome > input {
-  width: 200px;
-  border-radius: 80px;
-  outline: 0;
-  height: 30px;
-  border: 1px solid #000000;
-  padding-left: 10px;
-  /* Altera o estilo da fonte escrita dentro do input */
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
+.apelidoRuaNumero > div > input {
+  width: 16vw;
+  height: 2.2vw;
+  margin-top: -1vh;
   color: #58595b;
+  padding-left: 0.5vw;
 }
-.inputSobrenome {
-  margin-left: 50px;
+
+.apelidoRuaNumero > div > p {
+  margin-top: 1vh;
+  font-size: 1em;
 }
-.espacamentoSobrenome {
-  margin-left: 60px;
-}
+
 .inputRuaCidade {
-  width: 300px;
-  border-radius: 80px;
-  outline: 0;
-  height: 30px;
-  border: 1px solid #000000;
-  padding-left: 10px;
-  /* Altera o estilo da fonte escrita dentro do input */
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  color: #58595b;
+  width: 16vw;
+  height: 2.2vw;
+}
+
+.textNumeroUF {
+  margin-left: 8vw;
 }
 .inputNumeroUF {
-  width: 80px;
-  height: 30px;
-  margin-left: 75px;
-  border-radius: 80px;
-  outline: 0;
-  border: 1px solid #000000;
-  padding-left: 10px;
+  width: 7.5vw !important;
+  margin-left: 8vw;
+}
 
+.inputEmailSenhaPergunta > input {
+  width: 37.5vw;
+  height: 2.2vw;
+  margin-top: -1vh;
   /* Altera o estilo da fonte escrita dentro do input */
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
   color: #58595b;
+  padding-left: 0.5vw;
+}
+
+.inputEmailSenhaPergunta > p {
+  margin-top: 1vh;
+  font-size: 1em;
+}
+
+.botaoCadastrar {
+  display: grid;
+  grid-template-columns: 23vw 20vw;
+  margin-top: 2vh;
+}
+.botaoCadastrar > div > button {
+  background-color: #ccb0a5;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 80px;
+  width: 9vw;
+  height: 2.5vw;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #58595b;
+  font-size: 1.4vw;
+  font-weight: bold;
+  margin-top: 2vh;
+}
+
+.botaoCadastrar > div {
+  margin-top: 1.5vh;
+  margin-bottom: 2vh;
+}
+.botaoCadastrar > div > p {
+  font-size: 1vw;
+  line-height: 4px;
+}
+.botaoCadastrar > div > button:active {
+  position: relative;
+  top: 5px;
+  box-shadow: none;
+}
+
+.perguntaLogin {
+  text-decoration: none;
+  text-align: right;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.perguntaLogin > p:hover {
+  color: rgb(151, 128, 118);
+}
+.perguntaLogin > p {
+  color: #ccb0a5;
+  font-size: 1vw;
+  line-height: 4px;
+}
+.perguntaLogin:active {
+  position: relative;
+  top: 2px;
+  text-shadow: none;
+}
+.linhaCentro {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.linhaCentro > img {
+  width: 2px;
+  height: 85vh;
+  margin-top: 15vh;
+  margin-right: 3vw;
+}
+
+.logoCadastro {
+  display: grid;
+  justify-content: center;
+  align-self: center;
+  margin-top: 8vh;
+}
+
+.logoCadastro > img {
+  height: 35vw;
 }
 
 /* Remover setas no input do numero */
-input[type=number]::-webkit-inner-spin-button { 
-    -webkit-appearance: none;  
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
-input[type=number] { 
-   -moz-appearance: textfield;
-}
-
-.espacamentoNumeroUF {
-  margin-left: 80px;
-}
-.inputEmailSenhaPergunta {
-  width: 470px;
-  border-radius: 80px;
-  outline: 0;
-  height: 30px;
-  border: 1px solid #000000;
-  padding-left: 10px;
-  /* Altera o estilo da fonte escrita dentro do input */
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  color: #58595b;
-}
-.botaoCadastrar {
-  padding-top: 20px;
-  padding-left: 25px;
-}
-.botaoCadastrar > button {
-  /* Faz o cursor mudar*/
-  cursor: pointer;
-  border-radius: 16px;
-  color: #58595b;
-  font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bolder;
-  padding: 8px 50px;
-  background-color: #ccb0a5;
-  border: none;
-}
-.perguntaCadastrado {
-  font-size: 14px;
-  padding-top: 15px;
-  line-height: 5px;
-  padding-left: 110px;
-}
-.perguntaLogin {
-  font-size: 14px;
-  color: #ccb0a5;
-}
-.linhas {
-  /* Forma usada para ajustar a imagem*/
-  width: 3px;
-  height: auto;
-  min-height: 500px;
-  padding-right: 170px;
-  padding-left: 50px;
-}
-.logos {
-  /* Tamanho e posição da logo*/
-  height: 250px;
-  padding-left: 100px;
-  padding-top: 100px;
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 768px) {
   .cadastro {
-    font-size: 14px;
+    font-size: 2vw;
   }
-  .logos {
-    height: 200px;
-    padding-left: 50px;
+  .linhaCentro > img {
+    height: 70vh;
   }
-  .inputNomeSobrenome > input {
-    height: 25px;
-    width: 150px;
+  .botaoCadastrar > div > button {
+    height: 5vh;
+    width: 11vw;
+    font-size: 1.8vw;
   }
-  .inputSobrenome {
-    margin-left: 60px;
+  .botaoCadastrar > div > p {
+    font-size: 1.5vw;
   }
-  .espacamentoSobrenome {
-    margin-left: 70px;
+  .perguntaLogin > p {
+    font-size: 1.5vw;
   }
-  .inputRuaCidade {
-    height: 25px;
-    width: 250px;
+  .inputEmailSenhaPergunta > input {
+    height: 4vh;
   }
-  .inputNumeroUF {
-    height: 25px;
-    width: 70px;
-    margin-left: 40px;
+  .apelidoRuaNumero > div > input {
+    height: 4vh;
   }
-  .espacamentoNumeroUF {
-    margin-left: 50px;
-  }
-  .inputEmailSenhaPergunta {
-    height: 25px;
-    width: 375px;
-  }
-  .botaoCadastrar {
-    padding-left: 15px;
-  }
-  .botaoCadastrar > button {
-    padding: 4px 30px;
-    font-size: 14px;
-  }
-  .perguntaCadastrado {
-    font-size: 12px;
-    padding-left: 100px;
-  }
-  .perguntaLogin {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 840px) {
-  .cadastro {
-    font-size: 14px;
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .linhas {
-    display: none;
-  }
-  .logos {
-    height: 200px;
-    padding-left: 0px;
-    padding-top: 0px;
-  }
-}
-@media (max-width: 530px) {
-  .cadastro {
-    font-size: 14px;
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .inputNomeSobrenome > input {
-    height: 20px;
-    width: 120px;
-  }
-  .inputSobrenome {
-    margin-left: 45px;
-  }
-  .espacamentoSobrenome {
-    margin-left: 55px;
-  }
-  .inputRuaCidade {
-    height: 20px;
-    width: 200px;
-  }
-  .inputNumeroUF {
-    height: 20px;
-    width: 55px;
-    margin-left: 30px;
-  }
-  .espacamentoNumeroUF {
-    margin-left: 35px;
-  }
-  .inputEmailSenhaPergunta {
-    height: 20px;
-    width: 300px;
-  }
-  .linhas {
-    display: none;
-  }
-  .logos {
-    /* Tamanho e posição da logo*/
-    height: 175px;
+  .fraseCadastro {
     padding-left: 0px;
   }
-  .botaoCadastrar {
-    padding-left: 15px;
-  }
-  .botaoCadastrar > button {
-    padding: 4px 30px;
-    font-size: 14px;
-  }
-  .perguntaCadastrado {
-    font-size: 12px;
-    padding-left: 30px;
-  }
-  .perguntaLogin {
-    font-size: 12px;
-  }
 }
-@media (max-width: 450px) {
+@media (max-width: 538px) {
   .cadastro {
-    font-size: 12px;
-    display: flex;
-    flex-direction: column-reverse;
-    margin-top: 25px;
+    margin-top: 30vw;
     height: 90vh;
+    grid-template-columns: none;
+    grid-template-rows: 25% 25%;
+    font-size: 3.5vw;
   }
-  .inputNomeSobrenome > input {
-    height: 15px;
-    width: 90px;
+  .botoes_inputs {
+    margin-top: 0px;
+    padding-right: 10vw;
   }
-  .inputSobrenome {
-    margin-left: 30px;
+  .apelidoRuaNumero > div {
+    display: grid;
+    grid-template-columns: 30vw 20vw;
+    column-gap: 13vw;
   }
-  .espacamentoSobrenome {
-    margin-left: 35px;
+  .apelidoRuaNumero > div > input {
+    width: 35vw;
+    height: 5vw;
   }
-  .inputRuaCidade {
-    height: 15px;
-    width: 150px;
+  .fraseCadastro {
+    width: 35vw;
+    line-height: normal;
+  }
+  .textNumeroUF {
+    margin-left: 15vw;
   }
   .inputNumeroUF {
-    height: 15px;
-    width: 42px;
-    margin-left: 20px;
+    width: 15vw !important;
+    margin-left: 17vw;
   }
-  .espacamentoNumeroUF {
-    margin-left: 20px;
+  .inputEmailSenhaPergunta > input {
+    width: 75vw;
+    height: 5.5vw;
   }
-  .inputEmailSenhaPergunta {
-    height: 15px;
-    width: 225px;
+  .botaoCadastrar > div > button {
+    width: 20vw;
+    height: 6vw;
+    font-size: 1em;
   }
-  .linhas {
+  .botaoCadastrar > div {
+    margin-top: 0vh;
+  }
+  .botaoCadastrar > div > p {
+    font-size: 3vw;
+    width: max-content;
+    padding-left: 20vw;
+    margin-top: 3vw;
+  }
+  .linhaCentro > img {
     display: none;
   }
-  .logos {
-    /* Tamanho e posição da logo*/
-    height: 125px;
-    padding-left: 0px;
-    padding-top: 80px;
+  .perguntaLogin > p {
+    font-size: 3vw;
+    width: max-content;
+    justify-self: right;
+    margin-left: 17vw;
   }
-  .botaoCadastrar {
-    padding-left: 15px;
+
+  .logoCadastro {
+    padding-bottom: 10vh;
+    padding-right: 5vh;
+    grid-row: 1;
   }
-  .botaoCadastrar > button {
-    padding: 2px 15px;
-    font-size: 12px;
-  }
-  .perguntaCadastrado {
-    font-size: 10px;
-    padding-left: 14px;
-  }
-  .perguntaLogin {
-    font-size: 10px;
+  .logoCadastro > img {
+    height: 45vh;
   }
 }
-@media (max-width: 380px) {
+
+@media (max-width: 375px) {
   .cadastro {
-    font-size: 12px;
-    display: flex;
-    flex-direction: column-reverse;
-    margin-top: 10px;
+    margin-top: 25vh;
   }
-  .inputNomeSobrenome > input {
-    height: 15px;
-    width: 90px;
-  }
-  .inputSobrenome {
-    margin-left: 30px;
-  }
-  .espacamentoSobrenome {
-    margin-left: 35px;
-  }
-  .inputRuaCidade {
-    height: 15px;
-    width: 150px;
-  }
-  .inputNumeroUF {
-    height: 15px;
-    width: 42px;
-    margin-left: 20px;
-  }
-  .espacamentoNumeroUF {
-    margin-left: 20px;
-  }
-  .inputEmailSenhaPergunta {
-    height: 15px;
-    width: 225px;
-  }
-  .linhas {
-    display: none;
-  }
-  .logos {
-    /* Tamanho e posição da logo*/
-    height: 125px;
-    padding-left: 0px;
-    padding-top: 80px;
-  }
-  .botaoCadastrar {
-    padding-left: 15px;
-  }
-  .botaoCadastrar > button {
-    padding: 2px 15px;
-    font-size: 12px;
-  }
-  .perguntaCadastrado {
-    font-size: 10px;
-    padding-left: 14px;
-  }
-  .perguntaLogin {
-    font-size: 10px;
+  .fraseCadastro {
+    width: 45vw;
+    margin-left: -5vw;
   }
 }
